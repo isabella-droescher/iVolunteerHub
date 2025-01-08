@@ -1,6 +1,8 @@
 localStorage = Login Daten, Registrierung 
 sessionStorage = alle Daten nach Login (gelöscht nach Logout)
 
+Alle eingegebenen Daten gelöscht nach Schließung der Webseite.
+
 User Daten: 
 
 Benutzername: Sarah
@@ -15,4 +17,5 @@ Passwort: 1234
 // wenn import werte von anderer datei
  <script type="module" src="/JavaScript/organisation-visitor.js"></script>
 
- Link zur Website: https://ivolunteerhub.vercel.app
+Link zur Website: https://ivolunteerhub.vercel.app
+
