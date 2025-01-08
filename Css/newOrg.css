@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /*padding: 20px; /* Entfernung vom Rand weg oben und unten */
+
+}
+
+.container {
+    /* Startseite ansich */
+    width: 393px;
+    min-height: 775px;
+    margin: 0 auto;
+    /* Seite mittig */
+    background: var(--Linear-Blue-red, linear-gradient(180deg, #C8DFEB 0.18%, #FDF5F5 99.8%));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button für den "Zurück"-Link */
+.back-button {
+    align-items: center;
+    color: #0c0c0c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+/* Stil für das Logo im Header */
+
+.logo {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Stil für die Überschrift */
+h1 {
+    text-align: center;
+    margin: 10px 50px;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #000;
+    margin-top: 25px;
+
+}
+
+/* Stil für den Absatz */
+p {
+    text-align: center;
+    margin: 10px 50px;
+    font-size: 17px;
+    color: #666;
+}
+
+/* Stil für die Überschrift */
+h2 {
+    text-align: center;
+    margin: 10px 50px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 300;
+
+}
+
+.container-org-ansicht {
+    background: linear-gradient(to bottom, #e6e6e6, rgba(128, 128, 128, 0.362));
+    padding: 5px;
+    border-radius: 20px;
+    max-width: 350px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container-org-ansicht p {
+    font-size: 13px;
+
+}
+
+
+.show-org-button {
+    align-items: center;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 80px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+ 
+ 
+ 
+}
+
+.name {
+    text-align: center;
+    font-weight: 550;
+    font-size: 14px;
+
+
+}
+.buttons {
+    margin: 10px 0px 20px 20px;
+
+}
+
+.buttons button {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #797979;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.buttons button:hover {
+    background-color: #2d2d2d;
+}
+
+.delete-btn {
+    align-items: center;
+    color: #fff;
+    padding: 5px 70px;
+    border-radius: 5px;
+    margin: 20px 100px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    background-color: #a71d2a;
+}
+
+.delete-btn:hover {
+    background-color: #5b5757;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    margin-left: 190px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+

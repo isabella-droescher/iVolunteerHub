@@ -1,0 +1,97 @@
+/* visitor-organisation.html Organisationen Button */
+.org-button {
+    background-color: #333; /* Schwarzer Hintergrund */
+    color: white; /* Weiße Schrift */
+}
+
+.search-container {
+    text-align: center;
+    background-color: none; 
+}
+
+/* Durchstöbere Organisationen Überschrift */
+h1 {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #000;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 350px;
+    padding: 10px 40px 10px 20px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+}
+
+.search-button {
+    position: absolute;
+    right: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+/* Filtern nach .. */ 
+.filter-container span {
+    font-size: 10px;
+    margin-left: 20px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+/* Button Sport, Tiere, Freizeit */
+.filter-button {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 8px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.lock-button {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+}
+
+
+.filter-button:hover {
+    background-color: #f0f0f0;
+}
+
+.lock-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.filter-button.active {
+    background-color: #333; /* Schwarzer Hintergrund */
+    color: white; /* Weiße Schrift */
+    
+}

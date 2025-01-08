@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /*padding: 20px; /* Entfernung vom Rand weg oben und unten */
+
+}
+
+.container {
+    /* Startseite ansich */
+    width: 393px;
+    min-height: 775px;
+    margin: 0 auto;
+    /* Seite mittig */
+    background: var(--Linear-Blue-red, linear-gradient(180deg, #C8DFEB 0.18%, #FDF5F5 99.8%));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Überschrift Logo Bild */
+.container img {
+    width: 415px;
+    height: 121px;
+}
+
+.return {
+    margin-left: 20px;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Freiwillige Feuerwehr Titelschrift */
+header p {
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    padding: 0px 70px 0px 70px;
+    margin-bottom: 10px;
+    
+}
+
+/* Text Hans ist beigetreten */ 
+.text p {
+    margin-top: 10px; 
+    font-size: 9px;
+    font-weight: 100;
+}
+
+/* Anmelden für mehr Details Button oben */
+.anmelden-details1 {
+    margin-left: 80px;
+    padding: 10px 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+
+.welcome-section {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* Unterüberschirften */
+.welcome-section h2 {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Textinhalt */
+.welcome-section p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+
+.extra-section {
+    padding: 35px 20px 40px 20px;
+    /*[top] [right] [bottom] [left];*/
+
+}
+
+.extra-section h3 {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 15px; 
+}
+
+.extra-section p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+/* Anmelden für mehr Details Button unten */
+.anmelden-details2 {
+    margin-left: 100px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none; /* Entfernt den Link-Unterstrich */
+}
+/* Button Org beitreten und Nachricht senden unten bei extra section */
+.anmelden-details3 {
+    margin-left: 100px;
+    padding: 5px 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none; /* Entfernt den Link-Unterstrich */
+}
+/* Button Org Beitreten und nachricht senden nebeneinander */
+.anmelden-details4 {
+    box-sizing: content-box;
+    margin-left: 45px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none; /* Entfernt den Link-Unterstrich */
+
+
+}
+.colord2 {
+    background-color: #f9f9f9;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.anmelden-details1:hover,
+.anmelden-details2:hover, 
+.anmelden-details3:hover,
+.anmelden-details4:hover {
+    background-color: #555;
+}
+
+
+/* --- Lock Icon aurichten mittig, schrift grau ---- */
+
+/* Lock image position, art */
+.lock-button-tasks {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding-left: 120px;
+    padding-top: 50px; 
+}
+
+/* Form des Images */
+.lock-button-tasks img {
+    position: absolute; /* Bild liegt über Text */
+    width: 100px; /* Bildgröße anpassen */
+    height: 100px;  
+}
+
+/* Container Größe */ 
+.task-container {
+    position: relative;
+    padding: 20px 20px 0px 20px; /* Schrift position */
+}
+
+/* Text im Task Container */
+.task-container h2, .task-container p {
+    color: gray; /* Textfarbe auf grau setzen */
+    opacity: 0.4; /* Transparenz des Textes */
+    
+}
+
+
+/* Lock Icon für bevorstehende Ereignisse */
+.lock-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column; /* Elemente vertikal anordnen */
+    align-items: flex-start; /* Ausrichtung des Textes */
+    padding-bottom: 20px;
+    padding-top: 10px;
+    outline: none;
+    gap: 10px; /* Abstand zwischen den Reihen */
+}
+
+.button-item {
+    display: flex;
+    align-items: center; /* Text und Icon in einer Zeile anordnen */
+    gap: 10px; /* Abstand zwischen Icon und Text */
+}
+
+.button-item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Design für Linie (Abgrenzung) */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}

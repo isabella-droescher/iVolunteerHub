@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="/Css/dashboard.css">
+
+</head>
+
+<body>
+    <!-- Container für Button: Startseite, Organisationen, Anmelden, Registrieren -->
+    <div class="container">
+
+        <a href="/Html/newOrg.html" class="back-button">Zurück</a>
+
+        <!-- Profilbild-Bereich -->
+        <section class="profile-pic">
+            <div class="profile-image-container">
+                <img src="/Images/imgSarah.jpg" alt="Profilbild" class="profile-image">
+            </div>
+        </section>
+
+        <section class="lvl-role-section">
+            <div class="role">
+                <p>Benutzerrolle: <b>Regular+</b></p>
+                <h2>Level 3</h2>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar" style="width: 10%;"></div>
+                <span id="progress-text">50/300 Punkten erreicht</span>
+            </div>
+
+        </section>
+
+        <section class="profile-section">
+            <div class="profile">
+                <h3>Über dich</h3>
+                <p><b>Name:</b> Sarah Becker</p>
+                <p><b>Interessen:</b> Verantwortung, Bildungsprogramme</p>
+                <p><b>Fähigkeiten:</b> Lernfähig, Verantwortungsbewusst </p>
+                <p><b>Verfügbarkeit:</b> Nachmittag</p>
+            </div>
+        </section>
+
+        <section class="badge-section">
+            <h3>Deine Abzeichen</h3>
+            <div class="badge-container">
+                <div class="badge">
+                    <img src="/Images/einsteiger-badge.svg" alt="Einsteiger Badge">
+                    <p>Einsteiger Badge</p>
+                </div>
+                <div class="badge">
+                <img src="/Images/caritas_badge.svg" alt="Caritas Badge">
+                    <p>Caritas & Du</p>
+                </div>
+                <div class="badge">
+                    <img src="/Images/iVolunteerHub_Logo.png" alt="Org Badge">
+                        <p> (Org-Name) </p>
+                    </div>
+            </div>
+        </section>
+
+        <section class="org-section">
+            <div class="badge">
+            <h3>Deine Organisationen</h3>
+            <img src="/Images/caritas.png" alt="Caritas & Du">
+            </div>
+            <div class="profile">
+            <p> [Logo] Deine Organisation (Org-Name) </p>
+            </div>
+        </section>
+
+        <section class="star-section">
+            <div class="profile">
+            <h3>Interessiert an </h3>
+            <p> Keine markierten Organisationen vorhanden. </p>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <h3>Feedback und Bewertungen</h3>
+        
+            <!-- Interaktives Textfeld -->
+            <div class="interactive-feedback">
+                <input type="text" id="author-input" placeholder="Ihr Name" />
+                <input type="text" id="organization-input" placeholder="Ihre Organisation" />
+                <textarea id="feedback-input" placeholder="Schreiben Sie hier Ihr Feedback..."></textarea>
+                <button id="pin-feedback">Anpinnen</button>
+            </div>
+        
+            <div id="pinned-feedback-list" class="feedback-list">
+            <!-- Feedback wird hier dynamisch hinzugefügt -->
+            </div>
+        
+            <!-- Bereich für angezeigte Feedbacks -->
+            <div id="feedback-list"></div>
+        </section>
+
+        <section class="task-section">
+            <h3>Deine Aufgaben</h3>
+            <div class="task-message">
+                <p> Angenommene Aufgaben als abgeschlossen kennzeichnen </p>
+            </div>
+        </section>
+    </div>
+    
+      <!-- Profilinformationen -->
+    <script src="/JavaScript/feedback.js"></script>
+
+    
+    
+</body>
+
+</html>

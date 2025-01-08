@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /*padding: 20px; /* Entfernung vom Rand weg oben und unten */
+    
+}
+
+.container { /* Startseite ansich */
+    width: 393px;
+    min-height: 775px;
+    margin: 0 auto; /* Seite mittig */
+    background: var(--Linear-Blue-red, linear-gradient(180deg, #C8DFEB 0.18%, #FDF5F5 99.8%));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img { /* Startseite Überschrift Logo Bild */
+    width: 331px;
+    height: 100px;
+}
+
+.return {
+    margin-left: -80px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+header p {
+    width: 400px;
+    height: 100px;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700; /* Schrift fett */ 
+    line-height: 130%; /* 15.6px */
+    padding: 0px 70px 0px 70px;
+    }
+
+/* Styling für den Button-Container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Abstand */
+    margin-top: -40px;
+
+}
+
+/* Styling für alle Buttons */
+.buttons button {
+    padding: 0px 10px 0px 10px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 13.75px */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Spezifisches Styling für Startseite Button index.html*/
+.start-button {
+    background-color: #333; /* Schwarzer Hintergrund */
+    color: white; /* Weiße Schrift */
+}
+
+
+.buttons button:hover {
+    background-color: #d4d4d4;
+    color: #333;
+}
+
+.welcome-section {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.welcome-section h4 {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+/* Schritt für Schritt Anleitung Formatierung Überschrift */
+.step-by-step h3 {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.organizations-section h3 { /* Durchstöbere Organisationen Überschrift */
+    font-family: "Arial Rounded MT Bold";
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+}
+
+/* Organisationen Angemeldet Design */
+.organizations {  
+    width: 370px;
+    height: 210px;
+    flex-shrink: 0;
+}
+
+.organizations p {  /* Organisation Beschreibung Text */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 20px 0px; 
+}
+
+/* Visitor Organisations Design / Vorgeschlagene Landingpage */
+.organizations2 {  
+    width: 370px;
+    height: 170px;
+    flex-shrink: 0;
+}
+
+.organizations2 p {  /* Organisation Beschreibung Text */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 20px; /*[top] [right] [bottom] [left];*/
+    
+}
+
+.mehr-anzeigen {
+    margin-left: 135px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.extra-section {
+    padding: 35px 20px 40px 20px; /*[top] [right] [bottom] [left];*/
+
+}
+
+.extra-section h3 {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.extra-section p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.anmelden-details {
+    display: inline-block;
+    margin-left: 100px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.anmelden-details:hover {
+    background-color: #555;
+}
+
+/* Ausloggen Button oben rechts */
+/* Container Allgemein */
+.log-out {
+    display: flex;
+    padding: 15px 0px 0px 230px; /*[top] [right] [bottom] [left];*/
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* Text im Container "Du bist angemeldet" */
+.log-out p {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* Button "Ausloggen" */
+.log-out-btn {
+    font-size: 10px;
+    font-weight: 800;
+    color: red;
+}
+
+.button-mehr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-mehr-btn {
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    margin-left: 130px;
+    
+}
+
+/* Verknüpfen und Freunde einladen Button unten auf Landingpage */
+.facebook-login {
+    display: flex;
+    flex-direction: column; /* Vertikale Ausrichtung für die Buttons */
+    align-items: center; /* Zentriert den Volunteer ID-Button */
+    
+}
+/* Button Design */
+.facebook {
+    background-color: white;
+    color: black;
+    border: none; 
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 30px;
+}
+/* Facebook Icon */
+.facebook img {
+    width: 20px; /* Breite des Icons */
+    height: 20px; /* Höhe des Icons */
+    margin-top: 5px;
+}
+
+/* Facebook Logo mit Text neben Organisationen */
+.facebook-freunde {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-left: 20px;
+    
+}
+
+/* Facebook Icon */
+.facebook-freunde img {
+    width: 20px; /* Breite des Icons */
+    height: 20px; /* Höhe des Icons */
+}
+
+/* Text " ... ist beigetreten" */
+.facebook-freunde p {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+/* Stern Logo mit Text neben Organisationen */
+.star {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    
+}
+
+/* Stern Icon */
+.star img {
+    width: 20px; /* Breite des Icons */
+    height: 20px; /* Höhe des Icons */
+}
+
+/* Interssiert Text" */
+.star p {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.fb_star {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-left: 130px;
+    margin-top: 10px;
+
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 15px 20px;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #e4d6d6;
+}

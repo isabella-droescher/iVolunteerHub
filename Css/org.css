@@ -1,0 +1,180 @@
+
+/*organisation.html Organisationen Button */
+.org-button {
+    background-color: #333; /* Schwarzer Hintergrund */
+    color: white; /* Weiße Schrift */
+}
+
+.search-container {
+    text-align: center;
+    background-color: none; 
+}
+
+
+/* Durchstöbere Organisationen Überschrift */
+h1 {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #000;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 350px;
+    padding: 10px 40px 10px 20px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+}
+
+.search-button {
+    position: absolute;
+    right: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+/* Filtern nach .. */ 
+.filter-container span {
+    font-size: 10px;
+    margin-left: 20px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+/* Button Sport, Tiere, Freizeit */
+.filter-button {
+    padding: 8px 14px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 8px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.filter-button:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-button.active {
+    background-color: #333; /* Schwarzer Hintergrund */
+    color: white; /* Weiße Schrift */
+    
+}
+
+/* Button zum Erstellen einer neuen Organisation */
+.create-org-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#create-org-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#create-org-btn:hover {
+    background-color: #45a049;
+}
+
+/* Formular zum Erstellen einer neuen Organisation */
+.create-org-form {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-org-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.create-org-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.create-org-form input, 
+.create-org-form select,
+.create-org-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+.create-org-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.create-org-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.create-org-form button:hover {
+    background-color: #45a049;
+}
+
+.create-org-form #cancel-create {
+    background-color: #f44336;
+    margin-top: 10px;
+}
+
+.create-org-form #cancel-create:hover {
+    background-color: #e53935;
+}
+
+
+
+
+
+
+

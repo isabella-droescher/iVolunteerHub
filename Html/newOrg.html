@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neue Organisation erstellt</title>
+    <link rel="stylesheet" href="/Css/newOrg.css">
+    <link rel="stylesheet" href="/Css/alert-popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="/Images/iVolunteerHub_Text.png" alt="Logo" class="logo">
+        </header>
+
+        <!-- Button für Zurück zur Organisationsübersicht -->
+        <a href="organisationen.html" class="back-button">Zurück zu den Organisationen</a>
+
+        <div class="container-org-ansicht">
+            <h1>Neue Organisation erstellt</h1>
+            <p>Die Organisation wurde erfolgreich hinzugefügt!
+                Du wurdest vom Admin zum Org-Admin ernannt und hast nun Zugriff auf zusätzliche Funktionen.
+            </p>
+
+            <button class="show-org-button" onclick="showPopup('Weiterleitung zu Organisationsdetailseite')">Deine
+                Organisation anzeigen</button>
+
+        </div>
+
+        <h1> Organisationsansicht als </h1>
+        <h2>Org-Admin: </h2>
+
+        
+        <div class="divider">
+            <span class="line"></span>
+        </div>
+
+            <h2> Folgende Benutzer/innen haben deine Organisation mit Stern markiert! </h2>
+            <img src="/Images/star-full.svg" alt="star" class="star">
+
+            <ul>
+                <li>
+                    <div class="name">Max Müller</div>
+                    <div class="buttons">
+                        <button onclick="showPopup('Benachrichtigung an Max Müller gesendet!')">Benachrichtigung
+                            senden</button>
+                            
+                            <a href="profil.html">
+                                <button>Profil ansehen</button>
+                            </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="name">Sofia Wagner</div>
+                    <div class="buttons">
+                        <button onclick="showPopup('Benachrichtigung an Sofia Wagner gesendet!')">Benachrichtigung
+                            senden</button>
+                        <button onclick="showPopup('Profil von Sofia Wagner wird angezeigt!')">Profil
+                            ansehen</button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="divider">
+                <span class="line"></span>
+            </div>
+
+            <h2> Folgende Benutzer/innen sind deiner Organisation beigetreten! </h2>
+            <ul>
+                <li>
+                    <div class="name">Sarah Becker</div>
+                    <div class="buttons">
+                        <a href="profil2.html">
+                            <button>Profil ansehen</button>
+                        </a>
+
+                        <button
+                            onclick="showPopup('Willkommensnachricht an Sarah Becker gesendet!')">Willkommensnachricht
+                            senden</button>
+                    </div>
+                </li>
+
+            </ul>
+
+      
+
+        <button class="delete-btn">Organisation löschen</button>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()">Schließen</button>
+        </div>
+    </div>
+
+    <script src="/JavaScript/alert-popup.js"></script>
+
+</body>
+
+</html>

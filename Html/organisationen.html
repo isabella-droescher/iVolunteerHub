@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisationen</title>
+    <link rel="stylesheet" href="../Css/styles-start.css">
+    <link rel="stylesheet" href="../Css/org.css">
+
+</head>
+
+<body>
+    <!-- Container für Button: Startseite, Organisationen, Anmelden, Registrieren -->
+    <div class="container">
+
+        <!-- Layout log-out -->
+        <div class="log-out">
+            <p>Du bist angemeldet</p>
+            <a href="#" id="logout-link" class="log-out-btn">Ausloggen</a>
+
+        </div>
+
+        <header>
+            <img src="../Images/iVolunteerHub_Text.png" alt="logo">
+            <p>Tritt Organisationen bei und engagiere dich für einen guten Zweck</p>
+            <div class="buttons">
+                <button onclick="window.location.href='../Html/landingpage.html'">Startseite</button>
+                <button class="org-button">Organisationen</button>
+                <button onclick="window.location.href='../Html/dashboard.html'">Dashboard</button>
+                <!-- Verlinkt zur zweiten Seite -->
+                <button onclick="window.location.href='../Html/nachrichten.html'">Nachrichten</button>
+            </div>
+        </header>
+
+        <!-- Container für Suchleiste und Filteroptionen -->
+        <div class="search-container">
+            <h1>Durchstöbere Organisationen</h1>
+
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Organisationen durchsuchen...">
+                <button class="search-button">
+                    <img src="../Images/search.svg" alt="Suche">
+                </button>
+            </div>
+
+            <!-- Filter Methoden mit Javascript implementieren -->
+            <div class="filter-container">
+                <span>Filtern nach ...</span>
+                <button class="filter-button" data-category="Sport">Sport</button>
+                <button class="filter-button" data-category="Tiere">Tiere</button>
+                <button class="filter-button" data-category="Freizeit">Freizeit</button>
+                <button class="filter-button" data-category="Markiert">Markiert</button>
+                <button class="filter-button" data-category="Freunde">Freunde</button>
+            </div>
+        </div>
+
+        <section id="organizations-section" class="organizations-section">
+            <!-- Organisationen werden hier dynamisch durch JavaScript hinzugefügt -->
+        </section>
+ 
+    </div>
+
+    <!-- JavaScript-Datei einbinden -->
+    <script type="module" src="/JavaScript/popup-logik.js"></script>
+    <script type="module" src="/JavaScript/organisations.js"></script>
+    <script src="/JavaScript/logout.js"></script>
+  
+    
+
+</body>
+
+</html>

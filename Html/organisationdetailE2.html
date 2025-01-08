@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation Details Erweiterung 1</title>
+    <link rel="stylesheet" href="/Css/styles-orgdetails.css">
+    <link rel="stylesheet" href="/Css/detailsE2.css">
+    <link rel="stylesheet" href="/Css/chatpopup.css">
+</head>
+
+<body>
+    
+    <div class="container">
+       
+        <header>
+            <div id="org-logo"></div>
+            <a href="../Html/organisationen.html" class="return">Zurück</a>
+        </header>
+
+        <section class="begin-section">
+            <p class="welcome-message">Herzlich Willkommen bei </p>
+            <!-- <p class="organization-name">Freiwillige Feuerwehr</p> -->
+            <p id="org-name" class="organization-name"></p>
+            
+
+            <!-- Der Link, der das Pop-up öffnet Freunde einladen -->
+            <a href="javascript:void(0);" class="three-button-e2 color2" id="openInvite">Freund einladen</a>
+
+            <!-- Das Pop-up für die Freundeseinladung -->
+            <div id="invitePopup" class="popup">
+                <div class="popup-content">
+                    <span id="closeInvitePopup" class="close">&times;</span>
+                    <h3>Freund einladen</h3>
+                    <div id="inviteMessages">
+                        <!-- Erfolgsnachricht erscheint hier -->
+                    </div>
+                    <input type="text" id="friendEmail" placeholder="Bitte gib die E-Mail des Freundes ein ... ">
+                    <button id="sendInvite" onclick="sendInvite()">Einladen</button>
+                </div>
+            </div>
+            <!-- <a href="#" class="three-button-e2 color2">Nachricht senden</a> -->
+
+            <!-- Der Link, der das Pop-up öffnet -->
+            <a href="javascript:void(0);" class="three-button-e2 color2" id="openChat">Nachricht senden</a> 
+
+            <!-- Das Pop-up Chat-Fenster -->
+            <div id="chatPopup" class="popup">
+                <div class="popup-content">
+                    <span id="closePopup" class="close">&times;</span>
+                    <h3>Organisation Help Chat</h3>
+                    <div id="chatMessages">
+                        <!-- Nachrichten erscheinen hier -->
+                    </div>
+                    <input type="text" id="chatInput" placeholder="Nachricht eingeben...">
+                    <button id="sendMessage">Senden</button>
+                </div>
+            </div>
+
+
+            <a id="org-link-return" class="three-button-e2">Organisation verlassen</a>
+
+          
+        </section>
+
+        <section class="welcome-section">
+            <h2>Beschreibung</h2>
+            <p id="org-description"></p>
+
+            <h2>Mission</h2>
+            <p id="org-mission"></p>
+
+            <h2>Ort</h2>   
+            <p id="org-location"></p> 
+
+            <h2>Bevorstehende Ereignisse</h2> 
+            <button class="lock-button" id="events-container">
+                <!-- Dynamische Ereignisse werden hier eingefügt -->
+            </button>
+            
+    
+            <h2>Verfügbare Aufgaben der Organisation</h2>
+
+            <div class="task-container2" id="tasks-container">
+                <!-- Dynamische Aufgaben werden hier eingefügt -->
+            </div>
+        
+        
+        </section>
+
+        <section class="extra-section">
+
+             <!-- Linie -->
+            <div class="divider">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+    
+            <h3>Noch Fragen?</h3>
+            <p>Kein Problem! Sende uns eine Nachricht mit deinem Anliegen und 
+            wir werden uns so rasch wie möglich bei dir melden!</p>
+
+            <!-- <a href="javascript:void(0);" class="anmelden-details3" id="openChat2">Nachricht senden</a> -->
+
+
+        </section>
+    </div>
+       <!-- JavaScript-Datei einbinden, Skript Detailseite Daten  -->
+    <script src="/JavaScript/detail.js"></script>
+    <script src="/JavaScript/chatpopup.js"></script>
+    <script src="/JavaScript/invitefriend.js"></script>
+</body>
+
+</html>

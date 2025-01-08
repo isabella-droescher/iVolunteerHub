@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /*padding: 20px; /* Entfernung vom Rand weg oben und unten */
+    
+}
+
+.container {
+    /* Startseite ansich */
+    width: 393px;
+    min-height: 775px;
+    margin: 0 auto;
+    /* Seite mittig */
+    background: var(--Linear-Blue-red, linear-gradient(180deg, #C8DFEB 0.18%, #FDF5F5 99.8%));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ausloggen Button oben rechts */
+/* Container Allgemein */
+.log-out {
+    display: flex;
+    padding: 15px 0px 0px 230px; /*[top] [right] [bottom] [left];*/
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* Text im Container "Du bist angemeldet" */
+.log-out p {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* Button "Ausloggen" */
+.log-out-btn {
+    font-size: 10px;
+    font-weight: 800;
+    color: red;
+}
+
+
+.messagetext {
+    width: 450px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.messagetext p {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    padding: 20px 0px 30px 15px; /*[top] [right] [bottom] [left];*/
+}
+
+/* Styling für den Button-Container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Abstand */
+    margin-top: -40px;
+
+}
+
+/* Styling für alle Buttons */
+.buttons button {
+    padding: 0px 10px 0px 10px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 13.75px */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Spezifisches Styling für Startseite Button index.html*/
+.dashboard-button {
+    background-color: #333;
+    /* Schwarzer Hintergrund */
+    color: white;
+    /* Weiße Schrift */
+}
+
+.buttons button:hover {
+    background-color: #d4d4d4;
+    color: #333;
+}
+
+.profil h1 {
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    padding: 20px 0px 10px 0px; /*[top] [right] [bottom] [left];*/
+}
+
+.profil p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    padding: 0px 0px 5px 80px; /*[top] [right] [bottom] [left];*/
+}
+
+
+/* Button Einstellungen "Profil ergänzen" */
+.change-profil {
+    padding: 10px 0px 20px 150px; /*[top] [right] [bottom] [left];*/
+   
+}
+
+.change-profil-btn {
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.change-profil-btn:hover {
+    background-color: #d4d4d4;
+    color: black;
+}
+
+/* section class="Lvl-Role" */
+.lvl-role-section {
+    text-align: center;
+    font-size: 12px;
+}
+
+/*Benutzerrolle und Level Anzeige */
+/* Level Anzeige */
+.role h2 {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #4a90e2;
+}
+
+/* Punkte Balken */ 
+.progress-container {
+    position: relative;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    margin: 0 40px 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%; /* 43% Initial progress based on 130/300 */
+    background-color:rgba(16, 53, 146, 0.629);
+    transition: width 0.5s ease;
+}
+
+.progress-container span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    color: #000000;
+}
+
+#reward-link {
+    color: #4a90e2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Überschriften Profile */
+.task-section h3, .feedback-section h3, .star-section h3, .org-section h3, .badge-section h3, .profile h3{
+    text-align: center;
+    font-size: 17px;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+/* section class="Profile" */
+/* Name, Interessen, Fähigkeiten, Verfügbarkeit*/ 
+.profile p {
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* section class="badge-section" */
+/* Abzeichen */
+.badge-container {
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht mehrere Zeilen */
+    justify-content: center;
+    gap: 15px; /* Abstand zwischen den Badges */
+}
+  
+
+.badge {
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.badge p {
+    text-align: center;
+    font-size: 11px;
+}
+
+.badge img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0px;
+}
+/* badge-section ende */
+
+
+/* Profilbild Container */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Profilbild runden und gestalten */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer; /* Zeigt an, dass das Bild klickbar ist */
+    border: 3px solid rgba(16, 53, 146, 0.629);
+    transition: transform 0.3s ease; /* Animation beim Überfahren */
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* Bild vergrößern, wenn der Benutzer darüber schwebt */
+}
+
+/* Verstecken des Datei-Upload-Buttons */
+input[type="file"] {
+    display: none;
+}
+
+/* Task Section Design */
+.task-section {
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.date {
+    margin: 15px;
+    color: #333;
+    font-size: 0.8em;
+    line-height: 1.25;
+}
+
+.task-message {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+}
+
+.task-message p {
+    margin: 0;
+    color: #333;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+/* Interessiert an Section */
+.star-section .star-section-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.organizations {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+}
+
+.organizations img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.organizations h4 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.organizations p {
+    margin: 0;
+    color: #333;
+    font-size: 0.8em;
+    line-height: 1.5;
+
+}
+
+/* Organisationen Section - Image */
+.orgs img {
+    max-width: 35%;
+    max-height: 45%;
+}
+
+.org-section .org-section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    font-size: 0.8em;
+  
+}
+
+
+/* Feedback Section Design */
+.feedback-section {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.feedback-message {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.feedback-message-container{
+    border: 1px #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-style:italic;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.interactive-feedback {
+    margin-top: 20px;
+   
+}
+
+#author-input, #organization-input, #feedback-input {
+    width: 100%;
+    margin-bottom: 10px;
+   
+
+}
+
+#feedback-input {
+    height: 70px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-style:italic;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Stil für das angepinnte Feedback */
+#pinned-feedback-list {
+    margin-top: 20px;
+    
+}
+
+#pinned-feedback-list p {
+    margin: 0;
+    color: #333;
+    font-size: 0.8em;
+    line-height: 1.5;
+
+}
+
+.pinned-feedback-item {
+    background-color: #fff;
+    color: #888a88;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 0.8em;
+}
+
+.pinned-feedback-item .header {
+    margin-bottom: 10px;
+}
+
+.pinned-feedback-item .header .date {
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+.pinned-feedback-item .message {
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Button für den "Zurück"-Link */
+.back-button {
+    align-items: center;
+    color: #0c0c0c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}

@@ -1,0 +1,16 @@
+localStorage = Login Daten, Registrierung 
+sessionStorage = alle Daten nach Login (gelöscht nach Logout)
+
+User Daten: 
+
+Benutzername: Sarah
+Email: sarah.b@gmx.at 
+Passwort: 12345
+
+Benutzername: Max
+Email: max.mueller@gmx.at 
+Passwort: 1234
+
+
+// wenn import werte von anderer datei
+ <script type="module" src="/JavaScript/organisation-visitor.js"></script>

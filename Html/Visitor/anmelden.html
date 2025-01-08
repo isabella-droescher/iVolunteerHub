@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmelden - iVolunteerHub</title>
+    <link rel="stylesheet" href="../../Css/styles-anmelden.css">
+
+</head>
+
+<body>
+    <div class="login-container">
+        <header>
+            <img src="../../Images/iVolunteerHub_Text.png" alt="logo">
+            <p>Tritt Organisationen bei und engagiere dich für einen guten Zweck</p>
+
+        </header>
+
+        <section class="login-section">
+
+            <div class="login-p">
+                <p>Gib deine Daten ein, um dich bei iVolunteerHub anzumelden</p>
+            </div>
+
+            <form id="login-form">
+                <input type="email" id="email" placeholder="E-Mail Adresse" required>
+                <input type="password" id="password" placeholder="Passwort" required>
+                <button type="submit" class="primary">Anmelden</button>
+                <a href="../Visitor/forgotpassword.html" class="forgot-password">Passwort vergessen?</a>
+            </form>
+
+            <div class="divider">
+                <span class="line"></span>
+                <span class="text">ODER</span>
+                <span class="line"></span>
+            </div>
+
+            <div class="social-login">
+                <button class="facebook" id="facebook-login">
+                    <img src="/Images/Facebook.png" alt="Facebook Logo"> Weiter mit Facebook
+                </button>
+                <button class="google" id="google-login">
+                    <img src="/Images/Google.png" alt="Google Logo"> Weiter mit Google
+                </button>
+                <button class="volunteer-id">Weiter mit Volunteer ID</button>
+            </div>
+
+            <!-- Google-Popup -->
+            <div id="google-login-popup" class="popup hidden">
+                <div class="popup-content">
+                    <h3>Wähle ein Google-Konto</h3>
+                    <p>Bitte wähle ein Konto, um dich anzumelden:</p>
+                    <button class="google-account-btn" data-name="Laura Schmidt" data-email="laura.schmidt@gmail.com">
+                        <img src="/Images/Google.png" alt="Google Logo">
+                        <div>
+                            <strong>Laura Schmidt</strong>
+                            <br>
+                            <span>laura.schmidt@gmail.com</span>
+                        </div>
+                    </button>
+                    <button class="google-account-btn2"> Anderen Account auswählen </button>
+                    <button id="google-cancel-popup" class="btn cancel">Abbrechen</button>
+                </div>
+            </div>
+
+            <!-- Facebook-Popup -->
+            <div id="facebook-login-popup" class="popup hidden">
+                <div class="popup-content">
+                    <h3>Wähle ein Facebook-Konto</h3>
+                    <p>Bitte wähle ein Konto, um dich anzumelden:</p>
+                    <button class="facebook-account-btn" data-name="Sarah Becker"
+                        data-email="sarah.becker@facebook.com">
+                        <img src="/Images/Facebook.png" alt="Facebook Logo">
+                        <div>
+                            <strong>Sarah Becker</strong>
+                            <br>
+                            <span>sarah.becker@facebook.com</span>
+                        </div>
+                    </button>
+                    <button class="facebook-account-btn2"> Anderen Account auswählen </button>
+                    <button id="facebook-cancel-popup" class="btn cancel">Abbrechen</button>
+                </div>
+            </div>
+
+            <div class="register-section">
+                <p>Sie haben noch keinen Account?</p>
+                <a href="../Visitor/register.html" class="btn register">Registrieren</a>
+                <a href="../../index.html" class="btn continue-without-login">Ohne Anmeldung fortfahren</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="/JavaScript/user-management.js"></script>
+    <script type="module" src="/JavaScript/popup-logik.js"></script>
+</body>
+
+</html>

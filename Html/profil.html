@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="/Css/dashboard.css">
+
+</head>
+
+<body>
+    <!-- Container für Button: Startseite, Organisationen, Anmelden, Registrieren -->
+    <div class="container">
+
+        <a href="/Html/newOrg.html" class="back-button">Zurück</a>
+
+        <!-- Profilbild-Bereich -->
+        <section class="profile-pic">
+            <div class="profile-image-container">
+                <img src="/Images/imgMax.jpg" alt="Profilbild" class="profile-image">
+            </div>
+        </section>
+
+        <section class="lvl-role-section">
+            <div class="role">
+                <p>Benutzerrolle: <b>Novice</b></p>
+                <h2>Level 1</h2>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar" style="width: 10%;"></div>
+                <span id="progress-text">50/300 Punkten erreicht</span>
+            </div>
+
+        </section>
+
+        <section class="profile-section">
+            <div class="profile">
+                <h3>Über dich</h3>
+                <p><b>Name:</b> Max Müller</p>
+                <p><b>Interessen:</b> Freiwilligenaktivitäten, Soziologie</p>
+                <p><b>Fähigkeiten:</b> Lernfähig, Anpassungsfähig </p>
+                <p><b>Verfügbarkeit:</b> Nachmittag</p>
+            </div>
+        </section>
+
+        <section class="badge-section">
+            <h3>Deine Abzeichen</h3>
+            <div class="badge-container">
+                <div class="badge">
+                    <img src="/Images/einsteiger-badge.svg" alt="Einsteiger Badge">
+                    <p>Einsteiger Badge</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="org-section">
+            <div class="profile">
+            <h3>Deine Organisationen</h3>
+            <p>Noch keinen Organisationen begetreten </p>
+            </div>
+        </section>
+
+        <section class="star-section">
+            <div class="profile">
+            <h3>Interessiert an </h3>
+            <p> Deine Organisation (Org-Name)</p>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <div class="profile">
+            <h3>Feedback und Bewertungen</h3>
+            <p>Es gibt noch keine angepinnten Feedbacks.</p>
+        </div>
+        
+        </section>
+
+        <section class="task-section">
+            <h3>Deine Aufgaben</h3>
+            <div class="task-message">
+                <p> Aktuell keine abgeschlossenen Aufgaben </p>
+            </div>
+        </section>
+    </div>
+    
+      <!-- Profilinformationen -->
+    <script src="/JavaScript/feedback.js"></script>
+
+    
+    
+</body>
+
+</html>

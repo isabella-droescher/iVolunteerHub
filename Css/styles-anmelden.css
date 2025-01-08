@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /*padding: 20px; /* Entfernung vom Rand weg oben und unten */
+
+}
+
+.login-container {
+    /* Startseite ansich */
+    width: 393px;
+    min-height: 775px;
+    margin: 0 auto;
+    /* Seite mittig */
+    background: var(--Linear-Blue-red, linear-gradient(180deg, #C8DFEB 0.18%, #FDF5F5 99.8%));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container img {
+    /* Startseite Überschrift Logo Bild */
+    width: 331px;
+    height: 100px;
+}
+
+header {
+    text-align: center;
+}
+
+header p {
+    width: 400px;
+    height: 100px;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    padding: 0px 70px 0px 70px;
+}
+
+.login-section{ /* komplette login bereich */ 
+    display: block;
+    margin-top: -30px;
+}
+
+/*bearbeiten*/
+
+.login-p {
+    margin-bottom: 20px;
+    padding-left: 20px;
+
+}
+
+.login-p p {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 12px;
+  
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 70%;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 13px;
+
+}
+
+.btn {
+    display: block;
+    padding: 5px 10px;
+    margin: 0 auto;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+
+}
+
+/* TODO: Button design ausrichten */
+.primary {
+    margin-left: 40%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    width: 22%;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Social button container for horizontal layout */
+.social-login {
+    display: flex;
+    flex-direction: column; /* Vertikale Ausrichtung für die Buttons */
+    align-items: center; /* Zentriert den Volunteer ID-Button */
+    gap: 15px; /* Abstand zwischen den Buttons */
+
+}
+
+.facebook, .google, .volunteer-id {
+
+    display: block;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.facebook:hover, .google:hover, .volunteer-id:hover {
+    background-color: rgb(228, 224, 224);
+}
+
+.facebook img, .google img {
+    width: 20px; /* Breite des Icons */
+    height: 20px; /* Höhe des Icons */
+}
+
+.register {
+    margin-left: 40%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    width: 22%;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.continue-without-login {
+    margin-top: 5px;
+    font-size: 12px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-decoration: underline;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.forgot-password {
+    font-size: 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.text {
+    margin: 0 10px;
+    font-size: 11px;
+    color: #555;
+}
+
+.register-section {
+    display: block;
+    margin-top: 5px;
+    
+}
+
+.register-section p {
+    padding-top: 20px;
+    padding-left: 28%;
+    font-size: 12px;
+    color: #555;  
+}
+
+/* ----- POPUP ------ */ 
+
+/* Popup-Hintergrund */
+/* Popup-Hintergrund */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Standardmäßig verstecken */
+.hidden {
+    display: none;
+}
+
+/* Popup-Inhalt */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h3 {
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+/* Konto-Button */
+.google-account-btn, .google-account-btn2, .facebook-account-btn, .facebook-account-btn2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.google-account-btn img, .facebook-account-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-account-btn div, .facebook-account-btn div {
+    text-align: left;
+}
+
+.google-account-btn strong, .facebook-account-btn strong {
+    font-size: 14px;
+    color: #333;
+}
+
+.google-account-btn span, .facebook-account-btn span {
+    font-size: 12px;
+    color: #777;
+}
+
+.popup-content .btn.cancel {
+    background: #ccc;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}

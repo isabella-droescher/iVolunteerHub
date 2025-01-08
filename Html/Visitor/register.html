@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - iVolunteerHub</title>
+    <link rel="stylesheet" href="../../Css/styles-register.css">
+    
+</head>
+
+<body>
+    <div class="register-container">
+        <header>
+            <img src="../../Images/iVolunteerHub_Logo.png" alt="logo">
+        </header>
+
+        <section class="register-section">
+            
+            <div class="account-erstellen">
+            <p>Account erstellen</p>
+            </div>
+
+            <form id="register-form">
+                <input type="name" id="name" placeholder="Benutzername" required>
+                <input type="email" id="email" placeholder="E-Mail Adresse" required>
+                <input type="password" id="password" placeholder="Passwort" required>
+                <button type="submit" class="btn primary">Registrieren</button>
+
+            </form>
+
+            <div class="localStorageAbfrage" id="stored-users-container"></div>
+            
+
+            <div class="login-section">
+                <p>Sie haben bereits einen Account?</p>
+                <a href="../Visitor/anmelden.html" class="btn register">Einloggen</a>
+                <a href="../../index.html" class="btn continue-without-login">Ohne Anmeldung fortfahren</a>
+            </div>
+        </section>
+    </div>
+    <script src= "/JavaScript/user-management.js"></script>
+    <script src= "/JavaScript/localStorage.js"></script>
+</body>
+
+</html>

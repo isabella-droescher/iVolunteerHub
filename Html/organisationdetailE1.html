@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation Details Erweiterung 1</title>
+    <link rel="stylesheet" href="/Css/styles-orgdetails.css">
+    <link rel="stylesheet" href="/Css/chatpopup.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div id="org-logo"></div>
+            <!-- <img src="../Images/feuerwehr.png" alt="logo"> -->
+            <a href="../Html/organisationen.html" class="return">Zurück</a>
+
+            <!-- <p>Freiwillige Feuerwehr</p> -->
+            <p id="org-name"></p>
+
+            <a id="org-link" class="anmelden-details4">Organisation beitreten</a>
+            <!-- <a href="../Html/nachrichten.html" class="anmelden-details4 colord2">Nachricht senden</a> -->
+
+            <!-- Der Link, der das Pop-up öffnet -->
+            <a href="javascript:void(0);" class="anmelden-details4 colord2" id="openChat">Nachricht senden</a>
+
+            <!-- Das Pop-up Chat-Fenster -->
+            <div id="chatPopup" class="popup">
+                <div class="popup-content">
+                    <span id="closePopup" class="close">&times;</span>
+                    <h3>Organisation Help Chat</h3>
+                    <div id="chatMessages">
+                        <!-- Nachrichten erscheinen hier -->
+                    </div>
+                    <input type="text" id="chatInput" placeholder="Nachricht eingeben...">
+                    <button id="sendMessage">Senden</button>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="welcome-section">
+            <h2>Beschreibung</h2>
+            <p id="org-description"></p>
+
+            <h2>Mission</h2>
+            <p id="org-mission"></p>
+
+            <h2>Ort</h2>
+            <p id="org-location"></p>
+
+            <h2>Bevorstehende Ereignisse</h2>
+            <button class="lock-button" id="events-container">
+                <!-- Dynamische Ereignisse werden hier eingefügt -->
+            </button>
+
+            <h2>Mögliche Aufgaben</h2>
+            <button class="lock-button-tasks">
+                <img src="../Images/lock.png" alt="Lock">
+            </button>
+
+            <div class="task-container" id="tasks-container">
+                <!-- Dynamische Aufgaben werden hier eingefügt -->
+            </div>
+
+
+        </section>
+
+        <section class="extra-section">
+
+            <!-- Linie -->
+            <div class="divider">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <h3>Lust auf Mehr!</h3>
+            <p>Tritt noch heute unserer Organisation bei und
+                sichere dir zusätzliche Möglichkeiten, Punkte zu sammeln,
+                Level aufzusteigen und deine Chancen auf Belohnungen zu erhöhen.
+                Engagiere dich für einen guten Zweck und schalte exklusive Funktionen frei!</p>
+
+            <h3>Noch Fragen?</h3>
+            <p>Kein Problem! Sende uns eine Nachricht mit deinem Anliegen und
+                wir werden uns so rasch wie möglich bei dir melden!</p>
+
+        </section>
+    </div>
+    <!-- JavaScript-Datei einbinden, Skript Detailseite Daten  -->
+    <script src="/JavaScript/detail.js"></script>
+    <script src="/JavaScript/chatpopup.js"></script>
+
+</body>
+
+</html>

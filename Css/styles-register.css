@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /*padding: 20px; /* Entfernung vom Rand weg oben und unten */
+
+}
+
+.register-container {
+    /* Startseite ansich */
+    width: 393px;
+    min-height: 775px;
+    margin: 0 auto;
+    /* Seite mittig */
+    background: var(--Linear-Blue-red, linear-gradient(180deg, #C8DFEB 0.18%, #FDF5F5 99.8%));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container img {
+    /* Startseite Überschrift Logo Bild */
+    width: 50px;
+    height: 50px;
+    margin-left: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Überschrift */ 
+.account-erstellen p {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    font-family: "Arial Rounded MT Bold";
+    font-size: 25px;
+}
+
+/* Input Felder */
+input[type="name"],
+input[type="email"],
+input[type="password"]{
+    width: 70%;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+/* Input Felder für Profil bearbeiten */
+input[type="text"] {
+    width: 85%;
+    display: block;
+    padding: 10px 10px;
+    margin: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+label {
+    font-size: 16px;                
+    font-weight: bold;           
+    color: #333;                     
+    display: block;   
+    margin: 0 20px 8px;               
+}
+
+button[type="submit"] {
+    display: block;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    text-decoration: none;
+}
+/* Ende Input Felder für Profil bearbeiten */
+
+
+/* Registrieren Button */ 
+.primary {
+    display: block;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    width: 60%;
+    margin-top: 15px;;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    
+   
+    /* Space below Anmelden button */
+}
+
+.login-section {
+    display: block;
+    margin-top: 210px;
+    
+}
+
+/* Sie haben bereits einen Account? */
+.login-section p {
+    padding-top: 20px;
+    padding-left: 28%;
+    font-size: 12px;
+    color: #555;  
+}
+
+/* Ohne Anmeldung Button */
+.continue-without-login {
+    padding-left: 10%;
+    margin-top: 5px;
+    font-size: 12px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-decoration: underline;
+    width: 100%;
+}
+
+/* Einloggen Button */
+.register {
+    margin-left: 20%;
+    font-size: 12px;
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Abfrage local Storage prüfen */
+.localStorageAbfrage {
+   padding: 30px ;
+    font-size: 12px;
+    
+}
+
+
+
+

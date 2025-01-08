@@ -1,0 +1,116 @@
+
+/* Text: Herzlich Willkomen bei */
+.welcome-message {
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 1000;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    margin-bottom: 5px;
+}
+
+/* Organisationsname Text */
+.organization-name {
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    margin-bottom: 10px;
+}
+
+/* ... ist beigetreten Text */
+.begin-section-text {
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 200;
+    /* Schrift fett */
+    line-height: 130%;
+    /* 15.6px */
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.three-button-e2 {
+    margin-left: 3px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none; /* Entfernt den Link-Unterstrich */
+
+}
+
+.color1 {
+    background-color: #f9f9f9;
+    color: black;
+}
+.color2 {
+    background-color: #f9f9f9;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* Container Größe */ 
+.task-container2 {
+    max-width: 315px;            /* Verkleinert die maximale Breite */
+    margin: 20px;              /* Zentriert den Container horizontal */
+    padding: 20px;               /* Erhöhtes Padding für mehr "Luft" */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/* Task Item Box (Text + Button in einem) */
+.task-item {
+    display: flex;               /* Nebeneinander anordnen */
+    justify-content: space-between;
+    align-items: center;         /* Zentriert Text und Button vertikal */
+    margin-bottom: 20px;         /* Abstand zwischen Aufgaben */
+}
+
+/* Styling für den Textbereich */
+.task-container2-text {
+    max-width: 60%;              /* Begrenzung der Breite des Texts */
+}
+
+/* Aufgabe Überschriften */
+.task-container2 h2 {
+    margin: 20px 0 0;
+    color: #333;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Text */
+.task-container2 p {
+    margin: 10px 0 25px;
+    color: #666;
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
+/* Button Styling */
+.task-container-button {
+    text-decoration: none;
+    margin-left: 150px;
+    padding: 10px 20px;
+    background-color: grey;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.7em;
+    transition: background-color 0.3s;
+}
+
