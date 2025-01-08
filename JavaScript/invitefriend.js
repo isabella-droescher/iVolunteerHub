@@ -15,7 +15,7 @@ function sendInvite() {
 
     if (friendEmail) {
         // Hier könnte die Logik zum Einladen des Freundes hinzugefügt werden
-        inviteMessages.innerHTML = "Freundeseinladung wurde an " + friendEmail + " gesendet! +5 Punkte";
+        inviteMessages.innerHTML = "Freundeseinladung wurde an " + friendEmail + " gesendet!";
         document.getElementById('friendEmail').value = ""; // Eingabefeld leeren
     } else {
         inviteMessages.innerHTML = "Bitte gib die E-Mail des Freundes ein ... ";
