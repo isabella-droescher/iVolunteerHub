@@ -144,6 +144,7 @@ function downgradeToLevel1() {
 
     // Entferne alle Belohnungen/Badges
     sessionStorage.removeItem('rewardedBadges');
+    sessionStorage.removeItem('enteredBadges');
     
     // UI aktualisieren
     document.querySelector(".role h2").innerText = `Level ${userProgress.level}`;
@@ -166,11 +167,21 @@ function levelUp(userProgress) {
     // Punkte aktualisieren: Differenz übernehmen, falls vorhanden
     userProgress.points = overflowPoints > 0 ? overflowPoints : 0;
 
-   
+    if (userProgress.level <= 3) {
+        // Badge für Levelaufstieg hinzufügen
+        const levelUpBadge = levelConfig[userProgress.level]?.badge || `Level ${userProgress.level} Badge`;
+        // Füge das Level-Up Badge zu den Badges hinzu
+        const enteredBadges = JSON.parse(sessionStorage.getItem('enteredBadges')) || [];
+        enteredBadges.push(levelUpBadge);
+        // Speichere das aktualisierte Badge-Array
+        sessionStorage.setItem('enteredBadges', JSON.stringify(enteredBadges));
+    }
+
     // Benutzeroberfläche aktualisieren
     document.querySelector(".role h2").innerText = `Level ${userProgress.level}`;
     document.querySelector(".role b").innerText = `${levelConfig[userProgress.level]?.role || "Regular+"}`;
     updatePoints(0); // UI neu berechnen
+
 
       // Fortschritt speichern
       saveProgress(userProgress);
@@ -180,6 +191,7 @@ function levelUp(userProgress) {
 function loadBadges() {
     const badgeContainer = document.querySelector('.badge-container');
     const enteredOrganizations = JSON.parse(sessionStorage.getItem('enteredOrganizations')) || [];
+    const enteredBadges = JSON.parse(sessionStorage.getItem('enteredBadges')) || [];
 
     // Container leeren
     badgeContainer.innerHTML = '';
@@ -205,6 +217,16 @@ function loadBadges() {
             badgeContainer.appendChild(badgeElement);
         }
     });
+
+    enteredBadges.forEach(badge => {
+        const badgeElem = document.createElement('div');
+        badgeElem.classList.add('badge');
+        badgeElem.innerHTML = `
+            <img src="/Images/${badge.toLowerCase().replace(/ /g, '-')}.svg" alt="${badge} Badge" onerror="this.src='/Images/einsteiger-badge.svg'">
+             <p>${badge}</p>
+        `;
+        badgeContainer.appendChild(badgeElem);
+    });
 }
 
 
@@ -222,9 +244,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Levelkonfiguration
 const levelConfig = {
-    1: { role: "Novice", badge: "Einsteiger-Badge" },
-    2: { role: "Regular", badge: "Organisationsmitglied-Badge" },
-    3: { role: "Regular+", badge: "Erfolgs-Badge" }
+    1: { role: "Novice", badge: "Einsteiger Badge" },
+    2: { role: "Regular", badge: "Organisationsmitglied Badge" },
+    3: { role: "Regular+", badge: "Erfolgs Badge" }
 };
 
 
