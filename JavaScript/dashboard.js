@@ -122,8 +122,9 @@ function downgradeToLevel1() {
     // UI aktualisieren
     document.querySelector(".role h2").innerText = `Level ${userProgress.level}`;
     document.querySelector(".role b").innerText = "Novice";
-    updatePoints(0); // Fortschritt aktualisieren
     saveProgress(userProgress); // Fortschritt speichern
+    updatePoints(0); // Fortschritt aktualisieren
+    
 }
 
 
@@ -151,14 +152,21 @@ function levelUp(userProgress) {
         sessionStorage.setItem('enteredBadges', JSON.stringify(enteredBadges));
     }
 
+     // Fortschritt speichern
+     saveProgress(userProgress);
+
     // Benutzeroberfläche aktualisieren
     document.querySelector(".role h2").innerText = `Level ${userProgress.level}`;
     document.querySelector(".role b").innerText = `${levelConfig[userProgress.level]?.role || "Regular+"}`;
+
+    // Fortschrittsbalken und verbleibende Punkte aktualisieren
+    const pointsRemaining = userProgress.maxPoints - userProgress.points;
+    document.getElementById("remaining-points").innerText = `Noch ${pointsRemaining} Punkte bis Level ${userProgress.level + 1}`;
+    
     updatePoints(0); // UI neu berechnen
 
 
-      // Fortschritt speichern
-      saveProgress(userProgress);
+     
 }
 
 // Badges laden
