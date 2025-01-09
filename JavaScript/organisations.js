@@ -108,7 +108,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <label for="org-description">Beschreibung:</label>
                 <textarea id="org-description" required></textarea>
 
-                <label for="org-image">Bild URL:</label>
+                <label for="org-image-upload">Bild hochladen:</label>
+                <input type="file" id="org-image-upload" accept="image/*">
+                
+                <label for="org-image">Bild URL: (automatisch erzeugt) </label>
                 <input type="text" id="org-image" required>
 
                 <label for="org-category">Kategorie:</label>
@@ -161,7 +164,38 @@ document.addEventListener('DOMContentLoaded', async () => {
         cancelBtn.addEventListener("click", () => {
             renderOrganizations(); // Formular verwerfen und die Organisationen neu rendern
         });
-    }
+
+        // Event Listener für Bild hochladen
+    const imageUpload = document.getElementById("org-image-upload");
+    imageUpload.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                document.getElementById("org-image").value = reader.result; // Base64-Daten in das URL-Feld einfügen
+            };
+            reader.readAsDataURL(file); // Datei in Base64 umwandeln
+        }
+    });
+    
+
+    imageUpload.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                document.getElementById("org-image").value = reader.result; // URL setzen
+                const preview = document.createElement("img");
+                preview.id = "org-image-preview";
+                preview.src = reader.result; // Bild anzeigen
+                document.querySelector(".create-org-form").appendChild(preview);
+            };
+            reader.readAsDataURL(file); // Datei in Base64 umwandeln
+        }
+    });
+}
+
+
 
     // Event-Delegation für Sterne
     organizationsSection.addEventListener('click', event => {
@@ -271,6 +305,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (org) org.marked = true;
         });
     }
+
+
 
     // **Initialisierung**
     restoreStarredStatus();
