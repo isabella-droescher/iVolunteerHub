@@ -163,10 +163,7 @@ function levelUp(userProgress) {
     const pointsRemaining = userProgress.maxPoints - userProgress.points;
     document.getElementById("remaining-points").innerText = `Noch ${pointsRemaining} Punkte bis Level ${userProgress.level + 1}`;
     
-    updatePoints(0); // UI neu berechnen
-
-
-     
+    updatePoints(0); // UI neu berechnen   
 }
 
 // Badges laden
@@ -210,8 +207,6 @@ function loadBadges() {
         badgeContainer.appendChild(badgeElem);
     });
 }
-
-
 
 // Seite initialisieren
 document.addEventListener("DOMContentLoaded", () => {

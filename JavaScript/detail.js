@@ -27,8 +27,8 @@ const organisations = {
         events: [
             { name: "Tag der offenen Tür", date: "20.05.2025" },
             { name: "Brandschutzerklärung in Schulen", date: "21.05.2025" },
-            { name: "Feuerwehrfest", date: "22.05.2025" }, 
-            { name: "Übung für Katastrophenschutz", date: "23.05.2025" } 
+            { name: "Feuerwehrfest", date: "22.05.2025" },
+            { name: "Übung für Katastrophenschutz", date: "23.05.2025" }
         ],
         tasks: [
             { title: "Aufgabe 1", description: "Brandbekämpfung und Rettungseinsätze" },
@@ -37,10 +37,10 @@ const organisations = {
             { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
         ],
         tasks2: [
-            { id: 1, orgId: 'org1', title: "Aufgabe 1", description: "Brandbekämpfung und Rettungseinsätze" , points: "+200 Punkte pro Einsatz" },
+            { id: 1, orgId: 'org1', title: "Aufgabe 1", description: "Brandbekämpfung und Rettungseinsätze", points: "+200 Punkte pro Einsatz" },
             { id: 2, orgId: 'org1', title: "Aufgabe 2", description: "Technische Hilfeleistung bei Unfällen und Naturkatastrophen", points: "+200 Punkte pro Einsatz" },
             { id: 3, orgId: 'org1', title: "Aufgabe 3", description: "Durchführung von Brandschutzaufklärung und Schulungen in der Gemeinde", points: "+90 Punkte" },
-            { id: 4, orgId: 'org1', title: "Aufgabe 4", description: "Wartung und Pflege von Ausrüstung und Fahrzeugen", points: "+80 Punkte"}
+            { id: 4, orgId: 'org1', title: "Aufgabe 4", description: "Wartung und Pflege von Ausrüstung und Fahrzeugen", points: "+80 Punkte" }
         ]
     },
     "Caritas & Du Sozial Senioren": {
@@ -65,7 +65,7 @@ const organisations = {
         events: [
             { name: "Weihnachtsessen für Senioren", date: "20.04.2025" },
             { name: "Tag der offenen Tür im Caritas-Zentrum", date: "21.04.2025" },
-            { name: "Spendenaktion für bedürftige Familien",date: "22.04.2025" },
+            { name: "Spendenaktion für bedürftige Familien", date: "22.04.2025" },
             { name: "Workshop für ehrenamtliche Helfer", date: "23.04.2025" },
         ],
         tasks: [
@@ -75,7 +75,7 @@ const organisations = {
             { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
         ],
         tasks2: [
-            { id: 1, orgId: 'org2', title: "Aufgabe 1", description: "Betreuung von Senioren und Hilfestellung bei alltäglichen Aufgaben", points: "+30 Punkte pro Betreuungseinheit"},
+            { id: 1, orgId: 'org2', title: "Aufgabe 1", description: "Betreuung von Senioren und Hilfestellung bei alltäglichen Aufgaben", points: "+30 Punkte pro Betreuungseinheit" },
             { id: 2, orgId: 'org2', title: "Aufgabe 2", description: "Organisation und Durchführung von Freizeitaktivitäten für Senioren", points: "+60 Punkte pro Aktivität" },
             { id: 3, orgId: 'org2', title: "Aufgabe 3", description: "Spendenaktionen koordinieren und durchführen", points: "+20 Punkte pro Aktion" },
             { id: 4, orgId: 'org2', title: "Aufgabe 4", description: "Hilfe bei der Integration von Flüchtlingen und Migranten", points: "+100 Punkte pro Projekt" },
@@ -83,10 +83,10 @@ const organisations = {
         ]
     },
     "Die Tafel Österreich Lebensmittel": {
-            logo: "/Images/tafel.png",
-            name: "Tafel Österreich",
-            badge: "/Images/tafel_badge.svg",
-            description: `Die Tafel Österreich ist eine gemeinnützige Organisation, 
+        logo: "/Images/tafel.png",
+        name: "Tafel Österreich",
+        badge: "/Images/tafel_badge.svg",
+        description: `Die Tafel Österreich ist eine gemeinnützige Organisation, 
                             die sich dafür einsetzt, überschüssige Lebensmittel 
                             zu sammeln und an Bedürftige weiterzugeben. Durch die 
                             Zusammenarbeit mit Supermärkten, Bauernhöfen und 
@@ -96,36 +96,36 @@ const organisations = {
                             in schwierigen Lebenssituationen zu unterstützen und 
                             sorgt dafür, dass qualitativ hochwertige Nahrungsmittel 
                             nicht weggeworfen werden.`,
-    
-            mission: `Die Mission der Tafel Österreich ist es, Bedürftigen 
+
+        mission: `Die Mission der Tafel Österreich ist es, Bedürftigen 
                         durch die Verteilung von Lebensmittelspenden zu helfen 
                         und gleichzeitig einen aktiven Beitrag gegen 
                         Lebensmittelverschwendung zu leisten. Sie engagiert sich 
                         für eine solidarische Gesellschaft und setzt auf das 
                         Ehrenamt, um die Ressourcen der Gemeinschaft zu bündeln 
                         und effektiv zu nutzen.`,
-    
-            location: "Zentrale in Wien, verschiedene Ausgabestellen in ganz Österreich",
-            events: [
-                { name: "Lebensmittelausgabe für Bedürftige", date: "Jeden Fr,10:00-12:00" },
-                { name: "Spendenaktion - Lebensmittel für die Tafel", date: "15.05.2025" },
-                { name: "Tafel-Tag der offenen Tür", date: "10.06.2025" }
-            ],
-            tasks: [
-                { title: "Aufgabe 1", description: "Lebensmittel sammeln und sortieren" },
-                { title: "Aufgabe 2", description: "Lebensmittel an Bedürftige verteilen" },
-                { title: "Aufgabe 3", description: "Organisation von Spendenaktionen und Veranstaltungen" },
-                { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
-            ],
-            tasks2: [
-                { id: 1, orgId: 'org3', title: "Aufgabe 1", description: "Lebensmittel sammeln und sortieren", points: "+100 Punkte pro Einsatz" },
-                { id: 2, orgId: 'org3', title: "Aufgabe 2", description: "Lebensmittel an Bedürftige verteilen", points: "+150 Punkte pro Einsatz" },
-                { id: 3, orgId: 'org3', title: "Aufgabe 3", description: "Organisation von Spendenaktionen und Veranstaltungen", points: "+120 Punkte" },
-                { id: 4, orgId: 'org3', title: "Aufgabe 4", description: "Aufklärung über Lebensmittelverschwendung und Ernährung", points: "+90 Punkte" }
-            ]
-        },
 
-"Österreichisches Rotes Kreuz Rettung": {
+        location: "Zentrale in Wien, verschiedene Ausgabestellen in ganz Österreich",
+        events: [
+            { name: "Lebensmittelausgabe für Bedürftige", date: "Jeden Fr,10:00-12:00" },
+            { name: "Spendenaktion - Lebensmittel für die Tafel", date: "15.05.2025" },
+            { name: "Tafel-Tag der offenen Tür", date: "10.06.2025" }
+        ],
+        tasks: [
+            { title: "Aufgabe 1", description: "Lebensmittel sammeln und sortieren" },
+            { title: "Aufgabe 2", description: "Lebensmittel an Bedürftige verteilen" },
+            { title: "Aufgabe 3", description: "Organisation von Spendenaktionen und Veranstaltungen" },
+            { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
+        ],
+        tasks2: [
+            { id: 1, orgId: 'org3', title: "Aufgabe 1", description: "Lebensmittel sammeln und sortieren", points: "+100 Punkte pro Einsatz" },
+            { id: 2, orgId: 'org3', title: "Aufgabe 2", description: "Lebensmittel an Bedürftige verteilen", points: "+150 Punkte pro Einsatz" },
+            { id: 3, orgId: 'org3', title: "Aufgabe 3", description: "Organisation von Spendenaktionen und Veranstaltungen", points: "+120 Punkte" },
+            { id: 4, orgId: 'org3', title: "Aufgabe 4", description: "Aufklärung über Lebensmittelverschwendung und Ernährung", points: "+90 Punkte" }
+        ]
+    },
+
+    "Österreichisches Rotes Kreuz Rettung": {
         logo: "/Images/rotes-kreuz.png",
         name: "Österreichisches Rotes Kreuz",
         badge: "/Images/rotes-kreuz_badge.svg",
@@ -168,11 +168,11 @@ const organisations = {
         ]
     },
 
-"Tierheim Linz Tiere Tierschutz": {
-    logo: "/Images/tierheim.png",
-    name: "Tierheim Linz",
-    badge: "/Images/tierheim_badge.svg",
-    description: `Das Tierheim Linz ist eine Organisation, die sich dem Schutz und der 
+    "Tierheim Linz Tiere Tierschutz": {
+        logo: "/Images/tierheim.png",
+        name: "Tierheim Linz",
+        badge: "/Images/tierheim_badge.svg",
+        description: `Das Tierheim Linz ist eine Organisation, die sich dem Schutz und der 
                     Pflege von verlassenen, misshandelten oder herrenlosen Tieren widmet. 
                     Wir bieten Zuflucht für Tiere, die aus unterschiedlichen Gründen 
                     ihre Heimat verloren haben. Unsere Aufgaben umfassen die Pflege, 
@@ -180,40 +180,40 @@ const organisations = {
                     zu ermöglichen. Wir engagieren uns außerdem in der Aufklärung über 
                     Tierschutz und die Verantwortung im Umgang mit Tieren.`,
 
-    mission: `Die Mission des Tierheim Linz ist es, Tieren zu helfen, die in Not geraten sind, 
+        mission: `Die Mission des Tierheim Linz ist es, Tieren zu helfen, die in Not geraten sind, 
                 und ihnen eine zweite Chance auf ein besseres Leben zu geben. Durch 
                 Aufklärung, Rettungsaktionen und die Vermittlung von Tieren in verantwortungsvolle 
                 Hände tragen wir zur Förderung des Tierschutzes bei. Unser Ziel ist es, 
                 das Bewusstsein für den Schutz von Tieren zu schärfen und eine positive 
                 Veränderung in der Gesellschaft zu bewirken.`,
 
-    location: "Zentrale in Linz",
-    events: [
-        { name: "Adoptieren statt kaufen Kampagne", date: "10.02.2025" },
-        { name: "Tag der offenen Tür", date: "12.04.2025" },
-        { name: "Tierwohl-Workshop", date: "18.06.2025" },
-        { name: "Spendenlauf für Tiere", date: "01.08.2025" }
-    ],
-    tasks: [
-        { title: "Aufgabe 1", description: "Pflege und Betreuung von Tieren im Tierheim" },
-        { title: "Aufgabe 2", description: "Organisation von Adoptionen und Vermittlungen" },
-        { title: "Aufgabe 3", description: "Aufklärungsarbeit über Tierschutz" },
-        { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
-    ],
-    tasks2: [
-        { id: 1, orgId: 'org5', title: "Aufgabe 1", description: "Pflege und Betreuung von Tieren im Tierheim", points: "+50 Punkte" },
-        { id: 2, orgId: 'org5', title: "Aufgabe 2", description: "Organisation von Adoptionen und Vermittlungen", points: "+100 Punkte pro Adoption" },
-        { id: 3, orgId: 'org5', title: "Aufgabe 3", description: "Aufklärungsarbeit über Tierschutz", points: "+80 Punkte pro Veranstaltung" },
-        { id: 4, orgId: 'org5', title: "Aufgabe 4", description: "Spendenaktionen und Fundraising", points: "+120 Punkte pro Event" },
-        { id: 5, orgId: 'org5', title: "Aufgabe 5", description: "Rettungsaktionen für misshandelte Tiere", points: "+200 Punkte pro Einsatz" }
-    ]
-}, 
+        location: "Zentrale in Linz",
+        events: [
+            { name: "Adoptieren statt kaufen Kampagne", date: "10.02.2025" },
+            { name: "Tag der offenen Tür", date: "12.04.2025" },
+            { name: "Tierwohl-Workshop", date: "18.06.2025" },
+            { name: "Spendenlauf für Tiere", date: "01.08.2025" }
+        ],
+        tasks: [
+            { title: "Aufgabe 1", description: "Pflege und Betreuung von Tieren im Tierheim" },
+            { title: "Aufgabe 2", description: "Organisation von Adoptionen und Vermittlungen" },
+            { title: "Aufgabe 3", description: "Aufklärungsarbeit über Tierschutz" },
+            { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
+        ],
+        tasks2: [
+            { id: 1, orgId: 'org5', title: "Aufgabe 1", description: "Pflege und Betreuung von Tieren im Tierheim", points: "+50 Punkte" },
+            { id: 2, orgId: 'org5', title: "Aufgabe 2", description: "Organisation von Adoptionen und Vermittlungen", points: "+100 Punkte pro Adoption" },
+            { id: 3, orgId: 'org5', title: "Aufgabe 3", description: "Aufklärungsarbeit über Tierschutz", points: "+80 Punkte pro Veranstaltung" },
+            { id: 4, orgId: 'org5', title: "Aufgabe 4", description: "Spendenaktionen und Fundraising", points: "+120 Punkte pro Event" },
+            { id: 5, orgId: 'org5', title: "Aufgabe 5", description: "Rettungsaktionen für misshandelte Tiere", points: "+200 Punkte pro Einsatz" }
+        ]
+    },
 
-"Fußball Sportverein Turnier": {
-    logo: "/Images/sportverein.png",
-    name: "Fußball-Sportverein",
-    badge: "/Images/sportverein_badge.svg",
-    description: `Der Fußball Sportverein in Traun ist ein dynamischer und engagierter Verein, 
+    "Fußball Sportverein Turnier": {
+        logo: "/Images/sportverein.png",
+        name: "Fußball-Sportverein",
+        badge: "/Images/sportverein_badge.svg",
+        description: `Der Fußball Sportverein in Traun ist ein dynamischer und engagierter Verein, 
                     der sich der Förderung des Fußballsports auf allen Ebenen widmet. Vom 
                     Nachwuchsbereich bis hin zu den Erwachsenenmannschaften bieten wir allen 
                     Altersgruppen die Möglichkeit, sich sportlich zu betätigen. Der Verein 
@@ -221,66 +221,66 @@ const organisations = {
                     Veranstaltungen, um den Teamgeist zu fördern und die sportliche Entwicklung 
                     jedes einzelnen Spielers zu unterstützen.`,
 
-    mission: `Die Mission des Fußball Sportvereins ist es, Menschen jeden Alters für den 
+        mission: `Die Mission des Fußball Sportvereins ist es, Menschen jeden Alters für den 
                 Fußball zu begeistern, den Sport in der Gemeinschaft zu fördern und 
                 talentierte Spieler zu entwickeln. Wir bieten eine Plattform für 
                 Wettkampf und Teamarbeit und engagieren uns für die Verbesserung der 
                 fußballerischen Fähigkeiten sowie für eine faire und respektvolle 
                 Atmosphäre auf und neben dem Spielfeld.`,
 
-    location: "Sportplatz in Traun, Trainingsstätten in der Umgebung",
-    events: [
-        { name: "Freundschaftsspiel", date: "25.01.2025" },
-        { name: "Junioren-Turnier", date: "15.02.2025" },
-        { name: "Vereinsinterner Pokalwettbewerb", date: "28.03.2025" },
-        { name: "Sommer-Sportfest", date: "10.06.2025" }
-    ],
-    tasks: [
-        { title: "Aufgabe 1", description: "Organisation von Trainingsspielen für alle Altersgruppen" },
-        { title: "Aufgabe 2", description: "Planung und Durchführung von Turnieren" },
-        { title: "Aufgabe 3", description: "Betreuung der Mannschaften und Spieler" },
-        { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
-    ],
-    tasks2: [
-        { id: 1, orgId: 'org6',title: "Aufgabe 1", description: "Organisation von Trainingsspielen für alle Altersgruppen", points: "+100 Punkte pro Spiel" },
-        { id: 2, orgId: 'org6', title: "Aufgabe 2", description: "Planung und Durchführung von Turnieren", points: "+200 Punkte pro Turnier" },
-        { id: 3, orgId: 'org6', title: "Aufgabe 3", description: "Betreuung der Mannschaften und Spieler", points: "+150 Punkte pro Saison" },
-        { id: 4, orgId: 'org6', title: "Aufgabe 4", description: "Unterstützung bei Vereinsveranstaltungen und Festen", points: "+120 Punkte pro Event" },
-        { id: 5, orgId: 'org6', title: "Aufgabe 5", description: "Förderung von Nachwuchstalenten und Trainings" , points: "+180 Punkte pro Talent" }
-    ]
-}, 
+        location: "Sportplatz in Traun, Trainingsstätten in der Umgebung",
+        events: [
+            { name: "Freundschaftsspiel", date: "25.01.2025" },
+            { name: "Junioren-Turnier", date: "15.02.2025" },
+            { name: "Vereinsinterner Pokalwettbewerb", date: "28.03.2025" },
+            { name: "Sommer-Sportfest", date: "10.06.2025" }
+        ],
+        tasks: [
+            { title: "Aufgabe 1", description: "Organisation von Trainingsspielen für alle Altersgruppen" },
+            { title: "Aufgabe 2", description: "Planung und Durchführung von Turnieren" },
+            { title: "Aufgabe 3", description: "Betreuung der Mannschaften und Spieler" },
+            { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
+        ],
+        tasks2: [
+            { id: 1, orgId: 'org6', title: "Aufgabe 1", description: "Organisation von Trainingsspielen für alle Altersgruppen", points: "+100 Punkte pro Spiel" },
+            { id: 2, orgId: 'org6', title: "Aufgabe 2", description: "Planung und Durchführung von Turnieren", points: "+200 Punkte pro Turnier" },
+            { id: 3, orgId: 'org6', title: "Aufgabe 3", description: "Betreuung der Mannschaften und Spieler", points: "+150 Punkte pro Saison" },
+            { id: 4, orgId: 'org6', title: "Aufgabe 4", description: "Unterstützung bei Vereinsveranstaltungen und Festen", points: "+120 Punkte pro Event" },
+            { id: 5, orgId: 'org6', title: "Aufgabe 5", description: "Förderung von Nachwuchstalenten und Trainings", points: "+180 Punkte pro Talent" }
+        ]
+    },
 
-"Alpenverein Wanderungen Outdoor": {
-      logo: "/Images/alpenverein.png",
-      name: "Alpenverein",
-      badge: "/Images/alpenverein_badge.svg",
-      description: "Dieser Verein organisiert Wanderungen, Naturerkundungen und Outdoor-Aktivitäten, die es den Teilnehmern ermöglichen, die Schönheit der Natur zu erleben. Vom gemütlichen Spaziergang bis hin zu anspruchsvollen Bergtouren bieten wir für jedes Fitnesslevel passende Veranstaltungen. Der Verein fördert das Bewusstsein für den Umweltschutz und unterstützt eine nachhaltige Nutzung der Natur.",
-      mission: "Die Mission des Alpenvereins ist es, Menschen jeden Alters für das Wandern und die Natur zu begeistern, ihre körperliche und geistige Gesundheit zu fördern und den respektvollen Umgang mit der Umwelt zu lehren. Durch unsere Wanderungen und Outdoor-Aktivitäten möchten wir das Bewusstsein für den Naturschutz schärfen und die Bedeutung der Berge als Kulturgut hervorheben.",
-      location: "Zentrale in Innsbruck, zahlreiche regionale Wandergruppen",
-      events: [
-        { name: "Frühjahrs-Wanderung", date: "28.03.2025" },
-        { name: "Sommer-Alpenüberquerung", date: "15.07.2025" },
-        { name: "Herbst-Naturerkundung", date: "10.09.2025" },
-        { name: "Winterwanderung", date: "20.12.2025" }
-      ],
-      tasks: [
-        { title: "Aufgabe 1", description: "Organisation von Wanderungen für verschiedene Altersgruppen und Schwierigkeitsgrade" },
-        { title: "Aufgabe 2", description: "Planung und Durchführung von Naturerkundungs-Touren" },
-        { title: "Aufgabe 3", description: "Sicherstellung der Teilnehmerbetreuung und -sicherheit während der Touren" },
-        { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
-      ],
-      tasks2: [
-        { id: 1, orgId: 'org7', title: "Aufgabe 1", description: "Organisation von Wanderungen für verschiedene Altersgruppen und Schwierigkeitsgrade", points: "+50 Punkte pro Wanderung" },
-        { id: 2, orgId: 'org7', title: "Aufgabe 2", description: "Planung und Durchführung von Naturerkundungs-Touren", points: "+70 Punkte pro Tour" },
-        {id: 3, orgId: 'org7', title: "Aufgabe 3", description: "Sicherstellung der Teilnehmerbetreuung und -sicherheit während der Touren", points: "+80 Punkte pro Tour" },
-        {id: 4, orgId: 'org7',title: "Aufgabe 4", description: "Aufklärung über Umweltschutz und nachhaltige Outdoor-Aktivitäten", points: "+70 Punkte pro Veranstaltung" },
-        { id: 5, orgId: 'org7',title: "Aufgabe 5", description: "Förderung der Bergrettung und Sicherheitsmaßnahmen", points: "+100 Punkte pro Einsatz" }
-      ]
+    "Alpenverein Wanderungen Outdoor": {
+        logo: "/Images/alpenverein.png",
+        name: "Alpenverein",
+        badge: "/Images/alpenverein_badge.svg",
+        description: "Dieser Verein organisiert Wanderungen, Naturerkundungen und Outdoor-Aktivitäten, die es den Teilnehmern ermöglichen, die Schönheit der Natur zu erleben. Vom gemütlichen Spaziergang bis hin zu anspruchsvollen Bergtouren bieten wir für jedes Fitnesslevel passende Veranstaltungen. Der Verein fördert das Bewusstsein für den Umweltschutz und unterstützt eine nachhaltige Nutzung der Natur.",
+        mission: "Die Mission des Alpenvereins ist es, Menschen jeden Alters für das Wandern und die Natur zu begeistern, ihre körperliche und geistige Gesundheit zu fördern und den respektvollen Umgang mit der Umwelt zu lehren. Durch unsere Wanderungen und Outdoor-Aktivitäten möchten wir das Bewusstsein für den Naturschutz schärfen und die Bedeutung der Berge als Kulturgut hervorheben.",
+        location: "Zentrale in Innsbruck, zahlreiche regionale Wandergruppen",
+        events: [
+            { name: "Frühjahrs-Wanderung", date: "28.03.2025" },
+            { name: "Sommer-Alpenüberquerung", date: "15.07.2025" },
+            { name: "Herbst-Naturerkundung", date: "10.09.2025" },
+            { name: "Winterwanderung", date: "20.12.2025" }
+        ],
+        tasks: [
+            { title: "Aufgabe 1", description: "Organisation von Wanderungen für verschiedene Altersgruppen und Schwierigkeitsgrade" },
+            { title: "Aufgabe 2", description: "Planung und Durchführung von Naturerkundungs-Touren" },
+            { title: "Aufgabe 3", description: "Sicherstellung der Teilnehmerbetreuung und -sicherheit während der Touren" },
+            { title: "und weitere...", description: "Organisation beitreten und mehr erfahren" }
+        ],
+        tasks2: [
+            { id: 1, orgId: 'org7', title: "Aufgabe 1", description: "Organisation von Wanderungen für verschiedene Altersgruppen und Schwierigkeitsgrade", points: "+50 Punkte pro Wanderung" },
+            { id: 2, orgId: 'org7', title: "Aufgabe 2", description: "Planung und Durchführung von Naturerkundungs-Touren", points: "+70 Punkte pro Tour" },
+            { id: 3, orgId: 'org7', title: "Aufgabe 3", description: "Sicherstellung der Teilnehmerbetreuung und -sicherheit während der Touren", points: "+80 Punkte pro Tour" },
+            { id: 4, orgId: 'org7', title: "Aufgabe 4", description: "Aufklärung über Umweltschutz und nachhaltige Outdoor-Aktivitäten", points: "+70 Punkte pro Veranstaltung" },
+            { id: 5, orgId: 'org7', title: "Aufgabe 5", description: "Förderung der Bergrettung und Sicherheitsmaßnahmen", points: "+100 Punkte pro Einsatz" }
+        ]
     }
-  }
-  
+}
 
-  
+
+
 // ---- Funktion, um URL-Parameter zu lesen ----
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -301,7 +301,7 @@ if (orgData) {
     // Wenn die Organisation bereits betreten wurde, direkt zur Detailseite 2 weiterleiten
     if (enteredStatus && window.location.pathname === "/Html/organisationdetailE1.html" && window.location.search.includes(`name=${encodeURIComponent(orgName)}`)) {
         window.location.href = `/Html/organisationdetailE2.html?name=${encodeURIComponent(orgName)}`;
-      
+
     }
 
     // ---- Organisation Name anzeigen -----
@@ -330,18 +330,18 @@ if (orgData) {
             const eventDiv = document.createElement('div');
             eventDiv.classList.add('button-item');  // Klasse für das Design beibehalten
 
-            if(currentPage === 1 ) {
-            // Lock-Symbol für Seite 1
-            const img = document.createElement('img');
-            img.src = "/Images/lock.png";
-            img.alt = "Lock";
-            eventDiv.appendChild(img);
+            if (currentPage === 1) {
+                // Lock-Symbol für Seite 1
+                const img = document.createElement('img');
+                img.src = "/Images/lock.png";
+                img.alt = "Lock";
+                eventDiv.appendChild(img);
 
-            } else if(currentPage === 2) {
-             // Spezifisches Datum für Seite 2
-            const spanDate = document.createElement('span');
-            spanDate.textContent = event.date; 
-            eventDiv.appendChild(spanDate);
+            } else if (currentPage === 2) {
+                // Spezifisches Datum für Seite 2
+                const spanDate = document.createElement('span');
+                spanDate.textContent = event.date;
+                eventDiv.appendChild(spanDate);
 
             }
             const span = document.createElement('span');
@@ -363,38 +363,38 @@ if (orgData) {
     if (tasksToRender && tasksToRender.length > 0) {
         tasksToRender.forEach(task => {
             const taskDiv = document.createElement('div');
-        
+
             const taskTitle = document.createElement('h2');
             taskTitle.textContent = task.title + (task.points ? ` ${task.points}` : "");
-    
+
             const taskDescription = document.createElement('p');
             taskDescription.textContent = task.description;
-    
+
             taskDiv.appendChild(taskTitle);
             taskDiv.appendChild(taskDescription);
 
-             // "Annehmen"-Button nur auf Seite 2
-        if (currentPage === 2) {
-            const acceptButton = document.createElement('a');
-            acceptButton.classList.add('task-container-button'); // Klasse für das Styling
-            acceptButton.textContent = "Annehmen";
+            // "Annehmen"-Button nur auf Seite 2
+            if (currentPage === 2) {
+                const acceptButton = document.createElement('a');
+                acceptButton.classList.add('task-container-button'); // Klasse für das Styling
+                acceptButton.textContent = "Annehmen";
 
-            // Einzigartige ID für jeden Button basierend auf Index oder Task-ID
-            const buttonId = `${task.orgId}-${task.id}`;
+                // Einzigartige ID für jeden Button basierend auf Index oder Task-ID
+                const buttonId = `${task.orgId}-${task.id}`;
 
-            // Lade den gespeicherten Zustand
-            const taskAccepted = sessionStorage.getItem(buttonId) === 'true';
-            if (taskAccepted) {
-                acceptButton.textContent = "Angenommen";
-                acceptButton.style.backgroundColor = "#4CAF50"; // Grün
-            } else {
-                acceptButton.style.backgroundColor = "grey"; // Ursprüngliche Farbe
+                // Lade den gespeicherten Zustand
+                const taskAccepted = sessionStorage.getItem(buttonId) === 'true';
+                if (taskAccepted) {
+                    acceptButton.textContent = "Angenommen";
+                    acceptButton.style.backgroundColor = "#4CAF50"; // Grün
+                } else {
+                    acceptButton.style.backgroundColor = "grey"; // Ursprüngliche Farbe
+                }
+
+                acceptButton.addEventListener('click', () => toggleText(buttonId, acceptButton)); // Event hinzufügen
+                taskDiv.appendChild(acceptButton);
             }
 
-            acceptButton.addEventListener('click', () => toggleText(buttonId, acceptButton)); // Event hinzufügen
-            taskDiv.appendChild(acceptButton);
-        }
-    
             tasksContainer.appendChild(taskDiv);
         });
     } else {
@@ -419,14 +419,13 @@ if (orgData) {
 
             // Organisation in SessionStorage speichern
             saveOrganizationToDashboard(orgData);
-            //renderDashboardOrgList(); !! Auch bei dashboard.js implementiert !!
 
             // Weiterleitung zur Detailseite 2
             window.location.href = `/Html/organisationdetailE2.html?name=${orgNameEncoded}`;
             alert(`🎉 Glückwunsch! Du hast dir ein Abzeichen und +300 Punkte verdient`);
 
         });
-    } 
+    }
 
     // Überprüfen und Hinzufügen des Event Listeners für den orgLinkReturn
     const orgLinkReturn = document.getElementById('org-link-return');
@@ -442,12 +441,11 @@ if (orgData) {
             const enteredOrgName = orgData.name; // Organisation ID aus den Daten holen
             sessionStorage.removeItem(`organization-entered-${enteredOrgName}`);
 
-             // Organisation aus SessionStorage entfernen
+            // Organisation aus SessionStorage entfernen
             removeOrganizationFromDashboard(orgData);
-            //renderDashboardOrgList(); Auch bei dashboard.js implementiert !!
             window.location.href = `/Html/organisationdetailE1.html?name=${orgNameEncoded}`; // Weiterleitung zur Detailseite 1
         });
-    } 
+    }
 
 } else {
     // Fehlerbehandlung: Organisation nicht gefunden
@@ -473,13 +471,10 @@ function saveOrganizationToDashboard(org) {
     if (!exists) {
         // Organisation hinzufügen, wenn sie noch nicht existiert
         enteredOrganizations.push(org);
-         // Aktualisierte Organisationen in sessionStorage speichern
-    sessionStorage.setItem('enteredOrganizations', JSON.stringify(enteredOrganizations));
-   
-    }
+        // Aktualisierte Organisationen in sessionStorage speichern
+        sessionStorage.setItem('enteredOrganizations', JSON.stringify(enteredOrganizations));
 
-   
-      
+    }
 }
 
 // ----- Funktion: Organisation entfernen -----
@@ -502,45 +497,6 @@ function removeOrganizationFromDashboard(org) {
     // Aktualisierte Organisationen in sessionStorage speichern
     sessionStorage.setItem('enteredOrganizations', JSON.stringify(enteredOrganizations));
 }
-
-
-
-/* Auch bei dashboard.js implementiert !! --> nicht sicher ob gebrauch wird
-/* function renderDashboardOrgList() {
-
-    const orgSection = document.querySelector('.org-section');
-    
-    // Sicherstellen, dass orgSection existiert
-    if (!orgSection) {
-        console.error("Das Element '.org-section' wurde nicht gefunden.");
-        return;
-    }
-
-    // Dashboard leeren
-    orgSection.innerHTML = "";
-
-    const enteredOrganizations = JSON.parse(sessionStorage.getItem('enteredOrganizations')) || [];
-
-    if (enteredOrganizations.length === 0) {
-        orgSection.innerHTML = '<p>Keinen Organisationen beigetreten</p>';
-    } else {
-        enteredOrganizations.forEach(org => {
-            const orgElem = document.createElement('div');
-            orgElem.classList.add('orgs');
-            
-            // HTML-Struktur mit allen Details
-            orgElem.innerHTML = `
-                <img src="${org.logo}" alt="${org.name}" width="${org.imageWidth}" height="${org.imageHeight}" class="organization-image">
-            `;
-
-            orgSection.appendChild(orgElem);
-        });
-    }
-
-    
-}
-
-*/ 
 
 
 /* Aufgaben Button Text wechseln und Status speichern */
