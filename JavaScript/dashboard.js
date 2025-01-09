@@ -12,14 +12,6 @@ function loadProfileData() {
 // Beim Laden der Seite Profilinformationen aktualisieren
 document.addEventListener('DOMContentLoaded', loadProfileData);
 
-/* Punkte- und Levelsystem: Initialisierung
-const levelConfig = {
-    1: { role: "Novice", badge: "Einsteiger-Badge" },
-    2: { role: "Regular", badge: "Organisationsmitglied-Badge" },
-    3: { role: "Regular+", badge: "Erfolgs-Badge" },
-};
-*/
-
 // --> Profilbild aktualisieren <---
 
 // Funktion zum Öffnen des Datei-Upload-Felds
@@ -74,17 +66,6 @@ window.onload = function() {
     }
 };
 
-
-// --> RESET Function <--
-//Das Profilbild auf das Standardbild zurücksetzen
-//document.getElementById('profileImage').src = '../Images/iVolunteerHub_Logo.png';
-
-// Das Profilbild aus dem LocalStorage löschen
-// localStorage.removeItem('profileImage');
-
-// Alle Daten im LocalStorage löschen
-// localStorage.clear();
-
 // Fortschritt initialisieren oder laden
 function initializeProgress() {
     const defaultProgress = { level: 1, points: 0, maxPoints: 300 };
@@ -103,13 +84,6 @@ function updatePoints(pointsToAdd) {
     const progressText = document.getElementById("progress-text");
     const remainingPoints = document.getElementById("remaining-points");
 
-    /* Aktuelle Punkte und Level aus SessionStorage laden oder initialisieren
-    let userProgress = JSON.parse(sessionStorage.getItem("userProgress")) || {
-        level: 1,
-        points: 0,
-        maxPoints: 300,
-    };
-    */
     let userProgress = initializeProgress();
 
     // Punkte hinzufügen
@@ -120,7 +94,6 @@ function updatePoints(pointsToAdd) {
     progressBar.style.width = `${progressPercentage}%`;
     progressText.innerText = `${userProgress.points}/${userProgress.maxPoints} Punkten erreicht`;
 
-    
 
     // Prüfen, ob das nächste Level erreicht wurde
     if (userProgress.points >= userProgress.maxPoints) {
@@ -157,7 +130,7 @@ function downgradeToLevel1() {
 function levelUp(userProgress) {
 
     // Berechnung: Punkte, die über das Maximum hinausgehen
-    const overflowPoints = userProgress.points - levelConfig[userProgress.level]?.maxPoints || 0;
+    const overflowPoints = userProgress.points - userProgress.maxPoints;
 
     alert(`🎉 Glückwunsch! Du hast Level ${userProgress.level + 1} erreicht!`);
 
@@ -166,6 +139,7 @@ function levelUp(userProgress) {
 
     // Punkte aktualisieren: Differenz übernehmen, falls vorhanden
     userProgress.points = overflowPoints > 0 ? overflowPoints : 0;
+    userProgress.maxPoints = levelConfig[userProgress.level]?.maxPoints || userProgress.maxPoints;
 
     if (userProgress.level <= 3) {
         // Badge für Levelaufstieg hinzufügen
