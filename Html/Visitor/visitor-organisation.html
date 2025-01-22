@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visitor Organisation</title>
-    <link rel="stylesheet" href="../../Css/styles-start.css">
-    <link rel="stylesheet" href="../../Css/visitor-org.css">
+    <link rel="stylesheet" href="/Css/styles-start.css">
+    <link rel="stylesheet" href="/Css/visitor-org.css">
 
 </head>
 
@@ -14,14 +14,14 @@
     <!-- Container für Button: Startseite, Organisationen, Anmelden, Registrieren -->
     <div class="container">
         <header>
-            <img src="../../Images/iVolunteerHub_Text.png" alt="logo">
+            <img src="/Images/iVolunteerHub_Text.png" alt="logo">
             <p>Tritt Organisationen bei und engagiere dich für einen guten Zweck</p>
             <div class="buttons">
                 <button onclick="window.location.href='../../index.html'">Startseite</button>
                 <button class="org-button">Organisationen</button>
-                <button onclick="window.location.href='../Visitor/anmelden.html'">Anmelden</button>
+                <button onclick="window.location.href='/Html/Visitor/anmelden.html'">Anmelden</button>
                 <!-- Verlinkt zur zweiten Seite -->
-                <button onclick="window.location.href='../Visitor/register.html'">Registrieren</button>
+                <button onclick="window.location.href='/Html/Visitor/register.html'">Registrieren</button>
             </div>
         </header>
 
@@ -32,7 +32,7 @@
             <div class="search-bar">
                 <input type="text" id="search-bar" placeholder="Organisationen durchsuchen...">
                 <button class="search-button">
-                    <img src="../../Images/search.svg" alt="Suche">
+                    <img src="/Images/search.svg" alt="Suche">
                 </button>
             </div>
 
@@ -43,7 +43,7 @@
                 <button class="filter-button" data-category="Tiere">Tiere</button>
                 <button class="filter-button" data-category="Freizeit">Freizeit</button>
                 <button class="lock-button">
-                    <img src="../../Images/lock.png" alt="Lock">
+                    <img src="/Images/lock.png" alt="Lock">
                 </button>
             </div>
         </div>
@@ -54,7 +54,6 @@
         
     </div>
     <!-- JavaScript-Datei einbinden -->
-    <script src="/JavaScript/main.js"></script>
     <script type="module" src="/JavaScript/organisation-visitor.js"></script>
 </body>
 

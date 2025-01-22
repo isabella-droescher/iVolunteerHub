@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let activeFilter = null; // Globale Variable für den aktiven Filter
 
 
- // **Organisationen dynamisch rendern**
+ // Organisationen dynamisch rendern
  function renderOrganizations() {
     organizationsSection.innerHTML = ""; // Bestehende Inhalte leeren
 
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 }
 
-// **Filter anwenden**
+// Filter anwenden
 function applyFilter(category) {
     const organizationsElements = document.querySelectorAll('.organizations2');
 
@@ -74,7 +74,7 @@ function applyFilter(category) {
     }
 }
 
-// **Filter-Buttons**
+// Filter-Buttons
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const category = button.getAttribute('data-category');
@@ -82,17 +82,19 @@ filterButtons.forEach(button => {
     });
 });
 
-// **Suchfunktion TODO: Fehlermeldung aber nur bei Visitor
+// Suchfunktion
 searchBar.addEventListener('input', () => {
     const searchTerm = searchBar.value.toLowerCase();
     organizations.forEach(org => {
-        const element = document.querySelector(`.organizations[data-id="${org.id}"]`);
+        const element = document.querySelector(`.organizations2[data-id="${org.id}"]`);
+        if(element) {
         const matchesSearch = org.name.toLowerCase().includes(searchTerm);
         element.style.display = matchesSearch ? "block" : "none";
+        }
     });
 });
 
-// **Markierungen beim Laden wiederherstellen**
+// Markierungen beim Laden wiederherstellen
 function restoreStarredStatus() {
     const starredOrganizations = JSON.parse(sessionStorage.getItem('starredOrganizations')) || [];
     starredOrganizations.forEach(savedOrg => {
@@ -101,7 +103,7 @@ function restoreStarredStatus() {
     });
 }
 
-// **Initialisierung**
+// Initialisierung
 restoreStarredStatus();
 renderOrganizations();
 });
