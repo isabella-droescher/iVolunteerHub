@@ -27,10 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
             if (userExists) {
                 alert("Ein Benutzer mit dieser E-Mail-Adresse existiert bereits.");
             } else {
-                users.push({ name, email, password });
+                const newUser = { name, email, password };
+                users.push(newUser);
                 localStorage.setItem("users", JSON.stringify(users));
-                alert("Registrierung erfolgreich! Sie können sich jetzt anmelden.");
-                window.location.href = "/Html/Visitor/anmelden.html"; // Weiterleitung zur Anmeldeseite
+
+                // Automatische Anmeldung nach Registrierung
+                sessionStorage.setItem("loggedInUser", JSON.stringify(newUser)); // Speichere die Benutzerdaten in der Session Storage
+
+                alert("Registrierung erfolgreich! Sie werden weitergeleitet.");
+                window.location.href = "/Html/landingpage.html"; // Weiterleitung zur Landing Page
             }
         });
     }
