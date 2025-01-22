@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const name = button.getAttribute("data-name");
             const email = button.getAttribute("data-email");
 
-            // ---- TODO: Freunde mit Organisaitonen dynamisch ----
              // Simulierte Freundesliste 
              const friendsList = [
                 { name: "Anna Schmidt", assignedOrganization: "Freiwillige Feuerwehr" },
@@ -107,10 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
             // Bestätigung anzeigen
-            alert("Facebook-Freunde wurden erfolgreich importiert!");
+            // Funktion definiert in alert-popup.js 
+            showPopupFacebook("Anmeldung mit Facebook erforderlich!");
         } else {
             // Benutzer nicht eingeloggt
-            alert("Facebook-Freunde wurden bereits automatisch importiert");
+            showPopup("Facebook-Freunde wurden bereits automatisch importiert");
         }
     
     });

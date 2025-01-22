@@ -29,3 +29,45 @@
 .overlay.active {
     display: block;
 }
+
+/* Popup Message */
+#popup-message {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* Bereich für die Eingabefelder im Popup */
+#popup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label für Eingabefelder */
+#popup-fields label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Eingabefelder */
+#popup-fields input[type="email"],
+#popup-fields input[type="password"] {
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #333;
+    width: auto;
+}
+
+/* Eingabefelder im Fokus */
+#popup-fields input[type="email"]:focus,
+#popup-fields input[type="password"]:focus {
+    background-color: #fff;
+}
+

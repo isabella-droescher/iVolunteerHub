@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landingpage nach Anmeldung</title>
-    <link rel="stylesheet" href="../Css/styles-start.css">
-    <link rel="stylesheet" href="../Css/landingpage.css">
+    <link rel="stylesheet" href="/Css/styles-start.css">
+    <link rel="stylesheet" href="/Css/landingpage.css">
+    <link rel="stylesheet" href="/Css/alert-popup.css">
 </head>
 
 <body>
@@ -79,20 +80,29 @@
             <h3>Vorgeschlagene Organisationen</h3>
         </section>
 
-            <!-- Layout log-out -->
-            <div class="button-mehr">
+        <!-- Layout log-out -->
+        <div class="button-mehr">
 
-                <a href="../Html/organisationen.html" class="button-mehr-btn">Mehr durchstöbern</a>
+            <a href="../Html/organisationen.html" class="button-mehr-btn">Mehr durchstöbern</a>
 
-
-                <div class="facebook-login">
-                    <button id="facebook-link-button" class="facebook">
-                        <img src="../Images/Facebook.png" alt="Facebook Logo">
-                        Verknüpfen und Freunde einladen
-                    </button>
-                </div>
-
+            <!-- Facebook Freunde verknüpfen Button -->
+            <div class="facebook-login">
+                <button id="facebook-link-button" class="facebook">
+                    <img src="/Images/Facebook.png" alt="Facebook Logo">
+                    Verknüpfen und Freunde einladen
+                </button>
             </div>
+
+            <!-- PopUp Facebook Freunde verknüpfen -->
+            <div class="overlay" id="overlay"></div>
+
+            <div class="popup" id="popup">
+                <p id="popup-message"></p>
+                <div id="popup-fields"></div>
+                <button onclick="closePopupwithMessage()">OK</button>
+            </div>
+
+        </div>
         </section>
 
 
@@ -101,8 +111,9 @@
     <script src="/JavaScript/landingpage.js"></script>
     <script type="module" src="/JavaScript/random-org2.js"></script>
     <script type="module" src="/JavaScript/popup-logik.js"></script>
+    <script src="/JavaScript/alert-popup.js"></script>
 
-   
+
 </body>
 
 </html>
