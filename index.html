@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iVolunteerHub</title>
-    <link rel="stylesheet" href="Css/styles-start.css">
+    <link rel="stylesheet" href="/Css/styles-start.css">
+    <link rel="stylesheet" href="/Css/alert-popup.css">
 </head>
 
 <body>
@@ -33,7 +34,20 @@
             <p>Werde Teil unserer Gemeinschaft, lerne engagierte Menschen kennen und hilf dabei, die Welt Schritt für
                 Schritt zu einem besseren Ort zu machen.</p>
             <p>Mach mit – deine Unterstützung zählt!</p>
+
+            <button class="lock_icon_moreinfo" onclick="showPopup('Melde dich an oder erstelle eín Konto, <br> um exklusive Funktionen freizuschalten! <br> <br> Als Mitglied erhältst du Zugriff auf: <br><br> ein persönliches Profil, dass verwaltet werden kann, <br> die Möglichkeit Organisationen als Interssiert zu markieren <br> erweiterte Filtermöglichkeiten <br> Sammeln von Punkten, Levelaufstiegmöglichkeiten <br> Erhalt von Belohnungen <br> Kontakt mit Organisationen aufnehmen <br> Organisationen beitreten und Aufgaben annehmen <br> Profil mit Facebook verbinden und Freunde importieren <br> und vieles mehr... ')">
+                <span>Als Mitglied profitierst du von folgenden Vorteilen:</span>
+                <img src="/Images/lock.png" alt="Lock" class="lock-icon">
+            </button>
+            
         </section>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()">Schließen</button>
+        </div>
 
         <section class="organizations-section">
             <h3>Durchstöbere Organisationen</h3>
@@ -56,6 +70,7 @@
        
     </div>
     <script type="module" src="/JavaScript/random-org.js"></script>
+    <script src="/JavaScript/alert-popup.js"></script>
 </body>
 
 </html>
