@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organisation Details</title>
-    <link rel="stylesheet" href="../../Css/styles-orgdetails.css">
+    <link rel="stylesheet" href="/Css/styles-orgdetails.css">
+    <link rel="stylesheet" href="/Css/alert-popup.css">
 </head>
 
 <body>
@@ -42,8 +43,8 @@
             
     
             <h3>Mögliche Aufgaben</h3>
-            <button class="lock-button-tasks">
-                <img src="/Images/lock.png" alt="Lock">
+            <button class="lock-button-tasks" onclick="showPopup('Gesperrter Inhalt: <br> Melde dich an oder erstelle eín Konto, <br> um exklusive Funktionen freizuschalten! <br> <br> Nach erfolgreichen Beitritt einer Organisation, <br> werden die geperrten Inhalte freigeschaltet!')">
+                <img src="/Images/lock.png" alt="Lock" class="lock-icon"/>
             </button>
 
             <div class="task-container" id="tasks-container">
@@ -51,6 +52,13 @@
             </div>
 
         </section>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()">Schließen</button>
+        </div>
 
         <section class="extra-section">
         
@@ -69,7 +77,8 @@
         </section>
     </div>
      <!-- JavaScript-Datei einbinden, Skript Detailseite Daten  -->
-     <script src="../../JavaScript/detail.js"></script>
+     <script src="/JavaScript/detail.js"></script>
+     <script src="/JavaScript/alert-popup.js"></script>
 </body>
 
 </html>

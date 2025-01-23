@@ -7,6 +7,7 @@
     <title>Visitor Organisation</title>
     <link rel="stylesheet" href="/Css/styles-start.css">
     <link rel="stylesheet" href="/Css/visitor-org.css">
+    <link rel="stylesheet" href="/Css/alert-popup.css">
 
 </head>
 
@@ -42,10 +43,17 @@
                 <button class="filter-button" data-category="Sport">Sport</button>
                 <button class="filter-button" data-category="Tiere">Tiere</button>
                 <button class="filter-button" data-category="Freizeit">Freizeit</button>
-                <button class="lock-button">
-                    <img src="/Images/lock.png" alt="Lock">
+                <button class="lock-button" onclick="showPopup('Gesperrter Inhalt: <br> Melde dich an oder erstelle eín Konto, <br> um exklusive Funktionen freizuschalten! <br> <br> Als Mitglied erhältst du Zugriff auf <br> erweiterte FIlteroptionen, wie : <br><br> das Filtern nach Organisationen, <br> die du als Mitglied markiert hast, <br><br> und nach Organisationen, <br> denen deine Freunde beigetreten sind.')">
+                    <img src="/Images/lock.png" alt="Lock" class="lock-icon">
                 </button>
             </div>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()">Schließen</button>
         </div>
 
         <section id="organizations-section" class="organizations-section">
@@ -55,6 +63,7 @@
     </div>
     <!-- JavaScript-Datei einbinden -->
     <script type="module" src="/JavaScript/organisation-visitor.js"></script>
+    <script src="/JavaScript/alert-popup.js"></script>
 </body>
 
 </html>

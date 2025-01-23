@@ -77,7 +77,9 @@ h1 {
 .lock-button {
     background-color: transparent;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
+    cursor: pointer;
+    z-index: 1000;
 }
 
 
@@ -88,6 +90,7 @@ h1 {
 .lock-button img {
     width: 20px;
     height: 20px;
+    
 }
 
 .filter-button.active {

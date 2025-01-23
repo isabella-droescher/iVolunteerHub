@@ -182,11 +182,12 @@ header p {
     border: none;
     padding-left: 120px;
     padding-top: 50px; 
+    cursor: pointer; /* Zeigt an, dass der Button klickbar ist */
+    z-index: 1000; /* Über anderen Elementen */
 }
 
 /* Form des Images */
 .lock-button-tasks img {
-    position: absolute; /* Bild liegt über Text */
     width: 100px; /* Bildgröße anpassen */
     height: 100px;  
 }

@@ -3,7 +3,7 @@ function showPopup(message) {
     const overlay = document.getElementById('overlay');
     const messageElement = document.getElementById('popup-message');
 
-    messageElement.textContent = message;
+    messageElement.innerHTML = message;
     popup.classList.add('active');
     overlay.classList.add('active');
 }
@@ -38,7 +38,7 @@ function showPopupFacebook(message) {
     const popupFields = document.getElementById('popup-fields');
 
     // Setze die Nachricht im Popup
-    messageElement.textContent = message;
+    messageElement.innerHTML = message;
 
     popupFields.innerHTML = '';  // Dies entfernt alle vorherigen Felder
 
