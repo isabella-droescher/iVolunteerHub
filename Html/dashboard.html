@@ -7,6 +7,7 @@
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="/Css/dashboard.css">
+    <link rel="stylesheet" href="/Css/alert-popup.css">
 
 </head>
 
@@ -66,9 +67,19 @@
                 <span id="progress-text">0/300 Punkten erreicht</span>
             </div>
 
-            <p id="remaining-points">Noch 300 Punkte bis Level 2 <span id="reward-link">Belohnung anzeigen</span></p>
+            <p id="remaining-points">Noch 300 Punkte bis Level 2 </p>
+            <span id="reward-link" onclick="showPopup('Erreiche das nächste Level, <br> um folgende Belohnungen freizuschalten: <br><br> - Exklusive Abzeichen <br> - Sonderrabatte bei teilnehmenden Organisationen <br> - Zusätzliche Punkte bei Aufgabenabschlüssen <br> <br> Und vieles mehr... Lass dich überraschen!')">Belohnung anzeigen</span>
+           
+            
 
         </section>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="popup" id="popup">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()">Schließen</button>
+        </div>
 
         <section class="profile-section">
             <div class="profile">
@@ -127,6 +138,7 @@
     <script src="/JavaScript/landingpage.js"></script>
     <!-- Profilinformationen -->
     <script src="/JavaScript/dashboard.js"></script>
+    <script src="/JavaScript/alert-popup.js"></script>
 
 </body>
 
