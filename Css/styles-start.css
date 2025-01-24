@@ -320,7 +320,11 @@ header p {
     z-index: 1000;
     display: flex; /* Flexbox aktivieren */
     align-items: center; /* Text und Icon vertikal ausrichten */
-    gap: 10px; /* Abstand zwischen Text und Icon */
+    gap: 5px; /* Abstand zwischen Text und Icon */
+}
+
+.lock_icon_moreinfo span {
+    font-weight: 550;
 }
 
 .lock_icon_moreinfo img {
