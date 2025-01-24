@@ -88,7 +88,6 @@ header p {
 }
 
 .welcome-section h4 {
-    font-family: "Arial Rounded MT Bold";
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -103,7 +102,6 @@ header p {
 
 /* Schritt für Schritt Anleitung Formatierung Überschrift */
 .step-by-step h3 {
-    font-family: "Arial Rounded MT Bold";
     font-size: 18px;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -111,7 +109,6 @@ header p {
 
 
 .organizations-section h3 { /* Durchstöbere Organisationen Überschrift */
-    font-family: "Arial Rounded MT Bold";
     font-size: 18px;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -163,7 +160,6 @@ header p {
 }
 
 .extra-section h3 {
-    font-family: "Arial Rounded MT Bold";
     font-size: 18px;
     margin-bottom: 20px;
 }
