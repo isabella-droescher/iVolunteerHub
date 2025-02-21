@@ -1,5 +1,6 @@
-iVolunteerHub
+iVolunteerHub 
 ---------------------------
+Tritt Organisationen bei und engagiere dich für einen guten Zweck.
 
 Beschreibung:
 ---------------------------
@@ -19,7 +20,7 @@ Für das Hosting der Anwendung wurde die Plattform „Vercel“ ausgewählt, da 
 Die Anwendung ist über die URL https://ivolunteerhub.vercel.app zugänglich, über die Benutzer weltweit auf die Anwendung zugreifen können. 
 
 Die Verwendung von HTTPS gewährleistet eine sichere Kommunikation zwischen dem Benutzer und der Anwendung, sodass alle übertragenen Daten geschützt sind.
--------------------------------
+
 
 
 
