@@ -23,11 +23,16 @@ Die Verwendung von HTTPS gewährleistet eine sichere Kommunikation zwischen dem 
 
 Beschreibung der Struktur:
 ---------------------------------
-◦	Index.html: ist die Haupt-HTML-Datei, die die Struktur und den Inhalt der Startseite des Projekts enthält. Sie dient als     Einstiegspunkt für die gesamte Anwendung. 
-◦	Html/: Enthält alle zusätzlichen HTML-Dateien, die für die Funktionalität und Struktur der Anwendung erforderlich sind.
+◦   Index.html: ist die Haupt-HTML-Datei, die die Struktur und den Inhalt der Startseite des Projekts enthält. Sie dient als     Einstiegspunkt für die gesamte Anwendung. 
+
+◦   Html/: Enthält alle zusätzlichen HTML-Dateien, die für die Funktionalität und Struktur der Anwendung erforderlich sind.
+
 ◦	Css/: Beinhaltet die Stildateien, die das visuelle Erscheinungsbild definieren.
+
 ◦	JavaScript/: Speichert die JavaScript-Dateien, die für interaktive Funktionen und dynamische Inhalte zuständig sind.
+
 ◦	Images/: Beinhaltet alle Foto und Video Dateien.
+
 ◦	info.txt: Beinhaltet Zusatzinformationen
 
 
