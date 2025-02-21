@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
 
-    // **Organisationen dynamisch rendern**
-    // * funktion benötigt --> import { renderFacebookFriends } from '/JavaScript/popup-logik.js'; 
+    // Organisationen dynamisch rendern
+    // funktion benötigt --> import { renderFacebookFriends } from '/JavaScript/popup-logik.js'; 
 
     function renderOrganizations() {
         organizationsSection.innerHTML = ""; // Bestehende Inhalte leeren
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // **Interesse an Organisation toggeln, Status speichern bei Seitenwechsel **
+    // Interesse an Organisation toggeln, Status speichern bei Seitenwechsel 
     function toggleStar(orgId) {
         const org = organizations.find(o => o.id === orgId);
 
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // **Markierte Organisationen speichern, Status beibehalten nach Seitenwechsel **
+    // Markierte Organisationen speichern, Status beibehalten nach Seitenwechsel 
     function saveStarredOrganization(org) {
         const starredOrganizations = organizations.filter(o => o.marked); // Nur markierte
         sessionStorage.setItem('starredOrganizations', JSON.stringify(starredOrganizations));
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return `org${nextId}`;
     }
 
-    // **Filter anwenden**
+    // Filter anwenden
     function applyFilter(category) {
         const organizationsElements = document.querySelectorAll('.organizations');
 
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // **Filter-Buttons**
+    // Filter-Buttons
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             const category = button.getAttribute('data-category');
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    // **Suchfunktion**
+    // Suchfunktion
     searchBar.addEventListener('input', () => {
         const searchTerm = searchBar.value.toLowerCase();
         organizations.forEach(org => {
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    // **Markierungen beim Laden wiederherstellen**
+    // Markierungen beim Laden wiederherstellen
     function restoreStarredStatus() {
         const starredOrganizations = JSON.parse(sessionStorage.getItem('starredOrganizations')) || [];
         starredOrganizations.forEach(savedOrg => {
@@ -306,9 +306,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-
-
-    // **Initialisierung**
+    // Initialisierung
     restoreStarredStatus();
     renderOrganizations();
 });
