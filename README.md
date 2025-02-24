@@ -33,7 +33,5 @@ Beschreibung der Struktur:
 
 ◦	Images/: Beinhaltet alle Foto und Video Dateien.
 
-◦	info.txt: Beinhaltet Zusatzinformationen
-
 
 

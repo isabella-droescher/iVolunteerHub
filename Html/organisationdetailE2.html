@@ -1,3 +1,8 @@
+<!-- 
+ Erweiterte Version der dynamischen Organisationdetail-Seite, die erweiterte Details zu den einzelnen Organisationen anzeigt 
+ und deren Inhalte sich basierend auf der jeweiligen Organisation und Rolle automatisch anpassen.
+-->
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -11,9 +16,9 @@
 </head>
 
 <body>
-    
+
     <div class="container">
-       
+
         <header>
             <div id="org-logo"></div>
             <a href="/Html/organisationen.html" class="return">Zurück</a>
@@ -23,7 +28,7 @@
             <p class="welcome-message">Herzlich Willkommen bei </p>
             <!-- <p class="organization-name">Freiwillige Feuerwehr</p> -->
             <p id="org-name" class="organization-name"></p>
-            
+
 
             <!-- Der Link, der das Pop-up öffnet Freunde einladen -->
             <a href="javascript:void(0);" class="three-button-e2 color2" id="openInvite">Freund einladen</a>
@@ -40,10 +45,9 @@
                     <button id="sendInvite" onclick="sendInvite()">Einladen</button>
                 </div>
             </div>
-            <!-- <a href="#" class="three-button-e2 color2">Nachricht senden</a> -->
 
             <!-- Der Link, der das Pop-up öffnet -->
-            <a href="javascript:void(0);" class="three-button-e2 color2" id="openChat">Nachricht senden</a> 
+            <a href="javascript:void(0);" class="three-button-e2 color2" id="openChat">Nachricht senden</a>
 
             <!-- Das Pop-up Chat-Fenster -->
             <div id="chatPopup" class="popup">
@@ -61,7 +65,7 @@
 
             <a id="org-link-return" class="three-button-e2">Organisation verlassen</a>
 
-          
+
         </section>
 
         <section class="welcome-section">
@@ -71,15 +75,15 @@
             <h2>Mission</h2>
             <p id="org-mission"></p>
 
-            <h2>Ort</h2>   
-            <p id="org-location"></p> 
+            <h2>Ort</h2>
+            <p id="org-location"></p>
 
-            <h2>Bevorstehende Ereignisse</h2> 
+            <h2>Bevorstehende Ereignisse</h2>
             <button class="lock-button" id="events-container">
                 <!-- Dynamische Ereignisse werden hier eingefügt -->
             </button>
-            
-    
+
+
             <h2>Verfügbare Aufgaben der Organisation</h2>
 
             <div class="task-container2" id="tasks-container">
@@ -90,31 +94,31 @@
             <h2>Weitere neue Mitglieder</h2>
             <p>Lerne unsere neuen Mitglieder kennen!</p>
             <ul>
-            <li> Anna Müller </li>
-            <li> Sopia Fischer </li>
-            <li> Erik Weber </li>
-            <li> Max Johnson </li>
-            <li> Maria Meier </li>
+                <li> Anna Müller </li>
+                <li> Sopia Fischer </li>
+                <li> Erik Weber </li>
+                <li> Max Johnson </li>
+                <li> Maria Meier </li>
             </ul>
 
         </section>
 
         <section class="extra-section">
 
-             <!-- Linie -->
+            <!-- Linie -->
             <div class="divider">
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
-    
+
             <h3>Noch Fragen?</h3>
-            <p>Kein Problem! Sende uns eine Nachricht mit deinem Anliegen und 
-            wir werden uns so rasch wie möglich bei dir melden!</p>
+            <p>Kein Problem! Sende uns eine Nachricht mit deinem Anliegen und
+                wir werden uns so rasch wie möglich bei dir melden!</p>
 
 
         </section>
     </div>
-       <!-- JavaScript-Datei einbinden, Skript Detailseite Daten  -->
+    <!-- JavaScript-Datei einbinden, Skript Detailseite Daten  -->
     <script src="/JavaScript/detail.js"></script>
     <script src="/JavaScript/chatpopup.js"></script>
     <script src="/JavaScript/invitefriend.js"></script>

@@ -1,3 +1,8 @@
+<!-- 
+ Eine dynamische Seite, die alle verfügbaren Organisationen aus der Perspektive eines Visitors auflistet 
+ und es den Benutzern/innen ermöglicht, durch die verschiedenen Optionen zu navigieren.
+-->
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -21,7 +26,6 @@
                 <button onclick="window.location.href='/index.html'">Startseite</button>
                 <button class="org-button">Organisationen</button>
                 <button onclick="window.location.href='/Html/Visitor/anmelden.html'">Anmelden</button>
-                <!-- Verlinkt zur zweiten Seite -->
                 <button onclick="window.location.href='/Html/Visitor/register.html'">Registrieren</button>
             </div>
         </header>
@@ -43,7 +47,8 @@
                 <button class="filter-button" data-category="Sport">Sport</button>
                 <button class="filter-button" data-category="Tiere">Tiere</button>
                 <button class="filter-button" data-category="Freizeit">Freizeit</button>
-                <button class="lock-button" onclick="showPopup('Gesperrter Inhalt: <br> Melde dich an oder erstelle eín Konto, <br> um exklusive Funktionen freizuschalten! <br> <br> Als Mitglied erhältst du Zugriff auf <br> erweiterte FIlteroptionen, wie : <br><br> - das Filtern nach Organisationen, <br> die du als Mitglied markiert hast, <br><br> - nach Organisationen, <br> denen deine Freunde beigetreten sind.')">
+                <button class="lock-button"
+                    onclick="showPopup('Gesperrter Inhalt: <br> Melde dich an oder erstelle eín Konto, <br> um exklusive Funktionen freizuschalten! <br> <br> Als Mitglied erhältst du Zugriff auf <br> erweiterte FIlteroptionen, wie : <br><br> - das Filtern nach Organisationen, <br> die du als Mitglied markiert hast, <br><br> - nach Organisationen, <br> denen deine Freunde beigetreten sind.')">
                     <img src="/Images/lock.png" alt="Lock" class="lock-icon">
                 </button>
             </div>
@@ -59,7 +64,7 @@
         <section id="organizations-section" class="organizations-section">
             <!-- Organisationen werden hier dynamisch durch JavaScript hinzugefügt -->
         </section>
-        
+
     </div>
     <!-- JavaScript-Datei einbinden -->
     <script type="module" src="/JavaScript/organisation-visitor.js"></script>

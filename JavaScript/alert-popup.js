@@ -1,3 +1,5 @@
+//Beinhaltet Funktionen, um ein Popup mit einer Nachricht anzuzeigen und wieder zu schließen.
+
 function showPopup(message) {
     const popup = document.getElementById('popup');
     const overlay = document.getElementById('overlay');

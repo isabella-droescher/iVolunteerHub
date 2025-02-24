@@ -1,3 +1,8 @@
+<!-- 
+ Erweiterte Version der dynamischen Organisationdetail-Seite, die erweiterte Details zu den einzelnen Organisationen anzeigt 
+ und deren Inhalte sich basierend auf der jeweiligen Organisation und Rolle automatisch anpassen.
+-->
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -22,14 +27,13 @@
         </div>
 
         <header>
-            <img src="../Images/iVolunteerHub_Text.png" alt="logo">
+            <img src="/Images/iVolunteerHub_Text.png" alt="logo">
             <p>Tritt Organisationen bei und engagiere dich für einen guten Zweck</p>
             <div class="buttons">
-                <button onclick="window.location.href='../Html/landingpage.html'">Startseite</button>
+                <button onclick="window.location.href='/Html/landingpage.html'">Startseite</button>
                 <button class="org-button">Organisationen</button>
-                <button onclick="window.location.href='../Html/dashboard.html'">Dashboard</button>
-                <!-- Verlinkt zur zweiten Seite -->
-                <button onclick="window.location.href='../Html/nachrichten.html'">Nachrichten</button>
+                <button onclick="window.location.href='/Html/dashboard.html'">Dashboard</button>
+                <button onclick="window.location.href='/Html/nachrichten.html'">Nachrichten</button>
             </div>
         </header>
 
@@ -40,7 +44,7 @@
             <div class="search-bar">
                 <input type="text" id="search-bar" placeholder="Organisationen durchsuchen...">
                 <button class="search-button">
-                    <img src="../Images/search.svg" alt="Suche">
+                    <img src="/Images/search.svg" alt="Suche">
                 </button>
             </div>
 
@@ -58,15 +62,15 @@
         <section id="organizations-section" class="organizations-section">
             <!-- Organisationen werden hier dynamisch durch JavaScript hinzugefügt -->
         </section>
- 
+
     </div>
 
     <!-- JavaScript-Datei einbinden -->
     <script type="module" src="/JavaScript/popup-logik.js"></script>
     <script type="module" src="/JavaScript/organisations.js"></script>
     <script src="/JavaScript/logout.js"></script>
-  
-    
+
+
 
 </body>
 

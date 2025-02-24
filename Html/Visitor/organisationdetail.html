@@ -1,3 +1,8 @@
+<!-- Eine dynamische Seite, die erste Details zu den einzelnen Organisationen 
+ aus der Perspektive eines Visitors anzeigt und deren Inhalte sich basierend 
+ auf der jeweiligen Organisation automatisch anpassen.
+-->
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -10,41 +15,40 @@
 </head>
 
 <body>
-    
+
     <div class="container">
-       
+
         <header>
-            <div id="org-logo"></div> 
-            <!-- <img src="../../Images/feuerwehr.png" alt="logo"> -->
+            <!-- Dynamische Ereignisse werden hier eingefügt -->
+            <div id="org-logo"></div>
             <a href="/Html/Visitor/visitor-organisation.html" class="return">Zurück</a>
 
             <p id="org-name"></p>
             <a href="/Html/Visitor/anmelden.html" class="anmelden-details1">Anmelden für mehr Details</a>
-           
-
         </header>
 
         <section class="welcome-section">
             <h2>Beschreibung</h2>
             <p id="org-description"></p>
-        
+
 
             <h2>Mission</h2>
             <p id="org-mission"></p>
-        
-            
-            <h2>Ort</h2>   
-            <p id="org-location"></p> 
 
-            <h2>Bevorstehende Ereignisse</h2> 
+
+            <h2>Ort</h2>
+            <p id="org-location"></p>
+
+            <h2>Bevorstehende Ereignisse</h2>
             <button class="lock-button" id="events-container">
                 <!-- Dynamische Ereignisse werden hier eingefügt -->
             </button>
-            
-    
+
+
             <h3>Mögliche Aufgaben</h3>
-            <button class="lock-button-tasks" onclick="showPopup('Gesperrter Inhalt: <br> Melde dich an oder erstelle eín Konto, <br> um exklusive Funktionen freizuschalten! <br> <br> Nach erfolgreichen Beitritt einer Organisation, <br> werden die geperrten Inhalte freigeschaltet!')">
-                <img src="/Images/lock.png" alt="Lock" class="lock-icon"/>
+            <button class="lock-button-tasks"
+                onclick="showPopup('Gesperrter Inhalt: <br> Melde dich an oder erstelle eín Konto, <br> um exklusive Funktionen freizuschalten! <br> <br> Nach erfolgreichen Beitritt einer Organisation, <br> werden die geperrten Inhalte freigeschaltet!')">
+                <img src="/Images/lock.png" alt="Lock" class="lock-icon" />
             </button>
 
             <div class="task-container" id="tasks-container">
@@ -61,7 +65,7 @@
         </div>
 
         <section class="extra-section">
-        
+
             <div class="divider">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -69,16 +73,18 @@
 
             <h3>Lust auf Mehr!</h3>
             <p>Melde dich an oder erstelle ein Konto, um exklusive Funktionen freizuschalten!</p>
-            <p>Nutze dein persönliches Profil, um Punkte zu sammeln, im Level aufzusteigen und exklusive Belohnungen zu erhalten.</p>
-            <p>Tritt Organisationen bei, nimm persönlichen Kontakt mit Organisationen auf, engagiere dich für einen guten Zweck und erhalte Zugang zu exklusiven Inhalten.</p>
+            <p>Nutze dein persönliches Profil, um Punkte zu sammeln, im Level aufzusteigen und exklusive Belohnungen zu
+                erhalten.</p>
+            <p>Tritt Organisationen bei, nimm persönlichen Kontakt mit Organisationen auf, engagiere dich für einen
+                guten Zweck und erhalte Zugang zu exklusiven Inhalten.</p>
 
             <a href="/Html/Visitor/anmelden.html" class="anmelden-details2">Anmelden für mehr Details</a>
-    
+
         </section>
     </div>
-     <!-- JavaScript-Datei einbinden, Skript Detailseite Daten  -->
-     <script src="/JavaScript/detail.js"></script>
-     <script src="/JavaScript/alert-popup.js"></script>
+    <!-- JavaScript-Datei einbinden, Skript Detailseite Daten  -->
+    <script src="/JavaScript/detail.js"></script>
+    <script src="/JavaScript/alert-popup.js"></script>
 </body>
 
 </html>
